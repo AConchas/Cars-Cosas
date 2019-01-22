@@ -193,7 +193,7 @@
 						<div class="checkbox-filter">
 
 							<div class="input-checkbox">
-								<input type="checkbox" id="category-1">
+								<input type="checkbox" id="category-1" display= "inline"; onchange="checkNissan()">
 								<label for="category-1">
 									<span></span>
 									Lamborghini
@@ -202,7 +202,7 @@
 							</div>
 
 							<div class="input-checkbox">
-								<input type="checkbox" id="category-2">
+								<input type="checkbox" id="category-2" display= "inline"; onchange="checkNissan()">
 								<label for="category-2">
 									<span></span>
 									Audi
@@ -211,7 +211,7 @@
 							</div>
 
 							<div class="input-checkbox">
-								<input type="checkbox" id="category-3">
+								<input type="checkbox" id="category-3" display= "inline"; onchange="checkNissan()">
 								<label for="category-3">
 									<span></span>
 									BMW
@@ -220,7 +220,7 @@
 							</div>
 
 							<div class="input-checkbox">
-								<input type="checkbox" id="category-4" display= "inline"; onchange="checkAddress()">
+								<input type="checkbox" id="category-4" display= "inline"; onchange="checkNissan()">
 								<label for="category-4">
 									<span></span>
 									Nissan
@@ -229,19 +229,10 @@
 							</div>
 
 							<div class="input-checkbox">
-								<input type="checkbox" id="category-5">
+								<input type="checkbox" id="category-5" display= "inline"; onchange="checkNissan()">
 								<label for="category-5">
 									<span></span>
 									Ford
-									<small>(1)</small>
-								</label>
-							</div>
-
-							<div class="input-checkbox">
-								<input type="checkbox" id="category-6">
-								<label for="category-6">
-									<span></span>
-									Subaru
 									<small>(1)</small>
 								</label>
 							</div>
@@ -308,7 +299,7 @@
 
 
 
-						<div class="col-md-4 col-xs-6" id="flecha">
+						<div class="col-md-4 col-xs-6" id="Nissan" style="display:inline;">
 							<div class="product">
 								<div class="product-img">
 									<img src="./img/gtr1.jpg" alt="">
@@ -340,7 +331,7 @@
 						<!-- /product -->
 
 						<!-- product -->
-						<div class="col-md-4 col-xs-6">
+						<div class="col-md-4 col-xs-6" id="Audi" style="display:inline;">
 							<div class="product">
 								<div class="product-img">
 									<img src="./img/r81.jpg" alt="">
@@ -372,7 +363,7 @@
 						<div class="clearfix visible-sm visible-xs"></div>
 
 						<!-- product -->
-						<div class="col-md-4 col-xs-6">
+						<div class="col-md-4 col-xs-6" id="BMW" style="display:inline;">
 							<div class="product">
 								<div class="product-img">
 									<img src="./img/bmw2.jpg" alt="">
@@ -402,14 +393,14 @@
 						<div class="clearfix visible-lg visible-md"></div>
 
 						<!-- product -->
-						<div class="col-md-4 col-xs-6">
+						<div class="col-md-4 col-xs-6" id="Mustang" style="display:inline;">
 							<div class="product">
 								<div class="product-img">
 									<img src="./img/mustang1.jpg" alt="">
 								</div>
 								<div class="product-body">
 									<p class="product-category">Deportivos</p>
-									<h3 class="product-name"><a href="#">Ford Mustang 2018</a></h3>
+									<h3 class="product-name"><a href="mustang.html">Ford Mustang 2018</a></h3>
 									<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
 									<div class="product-rating">
 										<i class="fa fa-star"></i>
@@ -431,43 +422,17 @@
 
 						<div class="clearfix visible-sm visible-xs"></div>
 
-						<!-- product -->
-						<div class="col-md-4 col-xs-6">
-							<div class="product">
-								<div class="product-img">
-									<img src="./img/subaru2.jpg" alt="">
-								</div>
-								<div class="product-body">
-									<p class="product-category">Deportivos</p>
-									<h3 class="product-name"><a href="#">Subaru Impeza</a></h3>
-									<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
-									<div class="product-rating">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star-o"></i>
-										<i class="fa fa-star-o"></i>
-									</div>
-									<div class="product-rating">
-									</div>
-
-								</div>
-								<div class="add-to-cart">
-									<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
-								</div>
-							</div>
-						</div>
-						<!-- /product -->
+						
 
 						<!-- product -->
-						<div class="col-md-4 col-xs-6">
+						<div class="col-md-4 col-xs-6" id="Lambo" style="display:inline;">
 							<div class="product">
 								<div class="product-img">
 									<img src="./img/lambo.png" alt="">
 								</div>
 								<div class="product-body">
 									<p class="product-category">Deportivos</p>
-									<h3 class="product-name"><a href="#">Lamborghini Sesto Elemento</a></h3>
+									<h3 class="product-name"><a href="lambo.html">Lamborghini Sesto Elemento</a></h3>
 									<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
 									<div class="product-rating">
 										<i class="fa fa-star"></i>
@@ -494,7 +459,7 @@
 						<span class="store-qty">Showing 5-5 products</span>
 						<ul class="store-pagination">
 							<li class="active">1</li>
-							<li><a href="#flecha"><i class="fa fa-angle-right"></i></a></li>
+							<li><a href="#category-4"><i class="fa fa-angle-right"></i></a></li>
 						</ul>
 					</div>
 					<!-- /store bottom filter -->
