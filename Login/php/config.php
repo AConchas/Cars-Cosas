@@ -1,7 +1,17 @@
 <?php
-   define('DB_SERVER', 'localhost:8080');
-   define('DB_USERNAME', 'root');
-   define('DB_PASSWORD', 'rootpassword');
-   define('DB_DATABASE', 'tiendacoches');
-   $db = mysqli_connect(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_DATABASE);
+
+    function ConnectDataBase()
+    {
+        if (!($link=mysqli_connect("localhost","root","")))
+        {
+            echo "There is an error connecting the DB.";
+            exit();
+        }
+        if (!mysqli_select_db($link,"tiendacoches"))
+        {
+            echo "There is an error selecting the DB.";
+            exit();
+        }
+        return $link;
+    }
 ?>
