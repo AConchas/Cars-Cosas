@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+
+<?php
+   include('session.php');
+?>
+
 <html lang="en">
 <head>
 	<title>Sign In</title>
@@ -44,49 +49,8 @@
 					</a>
 					</div>
 
-					<div class="wrap-input100 validate-input" data-validate="Name is required">
-						<span class="label-input100">Full Name</span>
-						<input class="input100" type="text" name="name" placeholder="Enter Your Name">
-						<span class="focus-input100"></span>
-					</div>
-
-					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<span class="label-input100">Email</span>
-						<input class="input100" type="text" name="email" placeholder="Enter Your Email">
-						<span class="focus-input100"></span>
-					</div>
-
-					<div class="wrap-input100 validate-input" data-validate="Username is required">
-						<span class="label-input100">Username</span>
-						<input class="input100" type="text" name="username" placeholder="Enter Your Username">
-						<span class="focus-input100"></span>
-					</div>
-
-					<div class="wrap-input100 validate-input" data-validate = "Password is required">
-						<span class="label-input100">Password</span>
-						<input class="input100" type="password" name="pass" placeholder="*************">
-						<span class="focus-input100"></span>
-					</div>
-
-					<div class="wrap-input100 validate-input" data-validate = "Repeat Password is required">
-						<span class="label-input100">Repeat Password</span>
-						<input class="input100" type="password" name="repeat-pass" placeholder="*************">
-						<span class="focus-input100"></span>
-					</div>
-
-					<div class="flex-m w-full p-b-33">
-						<div class="contact100-form-checkbox">
-							<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
-							<label class="label-checkbox100" for="ckb1">
-								<span class="txt1">
-									I agree to the
-									<a href="#" class="txt2 hov1">
-										Terms of User
-									</a>
-								</span>
-							</label>
-						</div>
-
+					<h1> Bienvenido <?php echo $login_session; ?> a Cars & Cosas </h1>
+                    <h2><a href = "logout.php">Sign Out</a></h2>
 						
 					</div>
 
@@ -94,12 +58,12 @@
 						<div class="wrap-login100-form-btn">
 							<div class="login100-form-bgbtn"></div>
 							<button class="login100-form-btn">
-								Sign Up
+								Sign In
 							</button>
 						</div>
 
-						<a href="SingIn.html" class="dis-block txt3 hov1 p-r-30 p-t-10 p-b-10 p-l-30">
-							Sign in
+						<a href="index.html" class="dis-block txt3 hov1 p-r-30 p-t-10 p-b-10 p-l-30">
+							Sign Up
 							<i class="fa fa-long-arrow-right m-l-5"></i>
 						</a>
 					</div>
