@@ -96,4 +96,51 @@ else{
 }
 }
 
+
+function checkSUV() {
+    if (document.getElementById("category-1").checked || document.getElementById("category-2").checked || document.getElementById("category-3").checked || document.getElementById("category-4").checked) {
+        
+    
+    if(document.getElementById("category-4").checked){
+        document.getElementById('Audi').style.display = 'block';
+    }
+    else{
+        document.getElementById('Audi').style.display = 'none';
+    }
+
+    if(document.getElementById("category-1").checked){
+        document.getElementById('Nissan').style.display = 'block';
+    }
+    else{
+        document.getElementById('Nissan').style.display = 'none';
+    }
+
+    if(document.getElementById("category-2").checked){
+        document.getElementById('Mercedes').style.display = 'block';
+        document.getElementById('6x6').style.display = 'block';
+
+    }
+    else{
+        document.getElementById('Mercedes').style.display = 'none';
+        document.getElementById('6x6').style.display = 'none';
+    }
+
+    if(document.getElementById("category-3").checked){
+        document.getElementById('BMW').style.display = 'block';
+    }
+    else{
+        document.getElementById('BMW').style.display = 'none';
+    }
+
+
+    
+}
+else{
+    document.getElementById('Audi').style.display = 'block';
+    document.getElementById('Mercedes').style.display = 'block';
+    document.getElementById('Nissan').style.display = 'block';
+    document.getElementById('BMW').style.display = 'block';
+    document.getElementById('6x6').style.display = 'block';
+}
+}
     
