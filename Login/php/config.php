@@ -1,6 +1,7 @@
 <?php
 
-
+    function ConnectDataBase()
+    {
         if (!($link=mysqli_connect("localhost","root","")))
         {
             echo "There is an error connecting the DB.";
@@ -12,5 +13,5 @@
             exit();
         }
         return $link;
-    
+    }
 ?>

@@ -1,3 +1,31 @@
+<?php
+
+  session_start();
+
+  if (isset($_SESSION['user_id'])) {
+    header('Location: index.php');
+  }
+  require 'php/database.php';
+
+  if (!empty($_POST['username']) && !empty($_POST['passcode'])) {
+    $records = $conn->prepare('SELECT id, username, passcode FROM admin WHERE username = :username');
+    $records->bindParam(':username', $_POST['username']);
+    $records->execute();
+    $results = $records->fetch(PDO::FETCH_ASSOC);
+
+    $message = '';
+
+    if (count($results) > 0 && password_verify($_POST['passcode'], $results['passcode'])) {
+      $_SESSION['user_id'] = $results['id'];
+      header("Location: ../index.html");
+
+    } else {
+      $message = 'Sorry, those credentials do not match';
+    }
+  }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,7 +80,7 @@
 
 					<div class="wrap-input100 validate-input" data-validate = "Password is required">
 						<span class="label-input100">Password</span>
-						<input class="input100" type="password" name="pass" placeholder="*************">
+						<input class="input100" type="password" name="password" placeholder="*************">
 						<span class="focus-input100"></span>
 					</div>
 
@@ -76,7 +104,7 @@
 						<div class="wrap-login100-form-btn">
 							<div class="login100-form-bgbtn"></div>
 							<button class="login100-form-btn">
-								<a href="php/login.php"> Sign In </a>
+								<a href="login.php"> Sign In </a>
 							</button>
 						</div>
 
