@@ -1,5 +1,5 @@
 
-function checkNissan() {
+function checkDeportivos() {
     if (document.getElementById("category-1").checked || document.getElementById("category-2").checked || document.getElementById("category-3").checked || document.getElementById("category-4").checked || document.getElementById("category-5").checked) {
         
     
