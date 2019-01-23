@@ -245,18 +245,24 @@ iframe {
   font-size: 39px;
   color: #333333;
   line-height: 1.2;
-  text-align: left;
+  text-align: left; 
 }
 
 
-
+#logo{
+  height: 160px;
+  width: 160px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
 /*------------------------------------------------------------------
 [ Input ]*/
 
 .wrap-input100 {
   width: 100%;
   position: relative;
-  border-bottom: 2px solid #dbdbdb;
+  border-bottom: 2px solid #555555;
   margin-bottom: 45px;
 }
 
