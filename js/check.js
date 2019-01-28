@@ -143,4 +143,10 @@ else{
     document.getElementById('6x6').style.display = 'block';
 }
 }
+
+function alertLogin() {
+
+    alert("Daturen bat gaizki sartu duzu!!");
+    
+}
     

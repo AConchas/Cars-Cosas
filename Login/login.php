@@ -20,7 +20,11 @@ error_reporting(0);
       header("Location: ../index.php");
 
     } else {
-      $message = 'Daturen bat gaizki sartu duzu';
+     ?>
+
+      <script languaje ="javascript"> alert("Daturen bat gaizki sartu duzu!!"); </script>
+
+      <?php
     }
   }
 
@@ -33,6 +37,7 @@ error_reporting(0);
     <title>Login</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link
   </head>
   <body>
    
@@ -52,4 +57,6 @@ error_reporting(0);
     </form>
     </div>
   </body>
+
+  <script src="../js/check.js"></script>
 </html>
