@@ -144,9 +144,24 @@ else{
 }
 }
 
-function alertLogin() {
+function alertEmail() {
+        var pass = document.getElementById("email").value;
+        var arraydeCadenas = pass.split("@");
 
-    alert("Daturen bat gaizki sartu duzu!!");
-    
+        var comprobar = pass.split(".");
+        if(arraydeCadenas.length<2){
+            alert("El formato de email es incorrecto");
+        }
+      
+else{
+    if(comprobar.length<2){
+        alert("El formato de email es incorrecto");
+    }
+    else{
+        alert("Eskerrik asko gure web orrian erregistratzeagatik!!!");
+    }
+   
 }
-    
+
+}
+        
