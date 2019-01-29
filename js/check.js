@@ -144,6 +144,7 @@ else{
 }
 }
 
+
 function alertEmail() {
         var pass = document.getElementById("email").value;
         var arraydeCadenas = pass.split("@");
@@ -162,8 +163,8 @@ else{
     }
    
 }
-
 }
+
 
 function Categorias() {
     var categoria = document.getElementById("categorias").value;
@@ -171,23 +172,24 @@ function Categorias() {
         
     
     if (categoria == 1) {
-
-        window.location.href = "deportivos.html";
+        
+        location.href = "../deportivos.html";
 
     }
     
     else if (categoria == 2) {
 
-        window.location.href = "clasicos.html";
+        location.href = "../clasicos.html";
 
     }
 
     else{
 
-        window.location.href = "SUV.html";
+        location.href = "../SUV.html";
 
     }
-}
+    }
+
     else{
         alert("ERROR 404");
     }

@@ -435,7 +435,7 @@
 								
 								<iframe align="center" width="439" height="226" src="https://w2.countingdownto.com/2371147" frameborder="0"></iframe>
 							<br><br>
-							<h2 class="text-uppercase">New Collection Up to 50% OFF</h2>
+							<h2 class="text-uppercase" align="center">New Collection</h2>
 							
 							<a class="primary-btn cta-btn" href="deportivos.html">Shop now</a>
 						</div>
