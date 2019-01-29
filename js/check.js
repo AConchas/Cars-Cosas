@@ -164,4 +164,33 @@ else{
 }
 
 }
+
+function Categorias() {
+    var categoria = document.getElementById("categorias").value;
+    if (categoria != 0) {
+        
+    
+    if (categoria == 1) {
+
+        window.location.href = "deportivos.html";
+
+    }
+    
+    else if (categoria == 2) {
+
+        window.location.href = "clasicos.html";
+
+    }
+
+    else{
+
+        window.location.href = "SUV.html";
+
+    }
+}
+    else{
+        alert("ERROR 404");
+    }
+
+}
         
