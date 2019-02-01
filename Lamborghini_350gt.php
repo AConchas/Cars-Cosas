@@ -347,10 +347,9 @@
 												<div class="product-rating">
 											<p>Carrocería: Coupé <br>
 												Puertas: 2 <br>
-												Plazas: 4 <br>
+												Plazas: 2 <br>
 												Maletero: 315 L <br>
-												Potencia: 290-450 CV <br>
-												Consumo: 8,7 – 12,1 l/100km <br>
+												Potencia: 280 CV <br>
 												Precio: 49.501 € <br>
 												 
 														Valoracion:
@@ -358,7 +357,7 @@
 														<i class="fa fa-star"></i>
 														<i class="fa fa-star"></i>
 														<i class="fa fa-star"></i>
-														<i class="fa fa-star-o"></i>
+														<i class="fa fa-star"></i>
 													</div></p>
 										</div>
 									</div>
