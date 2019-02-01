@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php session_start(); ?>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -40,17 +41,58 @@
 		<header>
 			<!-- TOP HEADER -->
 			<div id="top-header">
-				<div class="container">
-					<ul class="header-links pull-left">
-						<li><a href="#"><i class="fa fa-phone"></i> 943-20-89-89</a></li>
-						<li><a href="#"><i class="fa fa-envelope-o"></i> Casr&Cosas@yahoo.net</a></li>
-						<li><a href="#"><i class="fa fa-map-marker"></i> 1734 Stonecoal Road</a></li>
-					</ul>
+			<div class="container">
+				<ul class="header-links pull-left">
+					<li><a href="#"><i class="fa fa-phone"></i> +021-95-51-84</a></li>
+					<li><a href="#"><i class="fa fa-envelope-o"></i> Casr&Cosas@yahoo.net</a></li>
+					<li><a href="#"><i class="fa fa-map-marker"></i> 1734 Stonecoal Road</a></li>
+				</ul>
+
+				<?php
+					if (isset($_SESSION['user_id'])){
+						if (37==($_SESSION['user_id'])){
+				   ?>
 					<ul class="header-links pull-right">
-						<li><a href="Login/index.html"><i class="fa fa-user-o"></i> My Account</a></li>
+						<li><a href="Login/logout.php"><i class="fa fa-user-o"></i> Log Out</a></li>
 					</ul>
-				</div>
+					<?php
+				}
+			  }
+				  ?>
+
+				<?php
+					if (isset($_SESSION['user_id'])){
+						if (37!=($_SESSION['user_id'])){
+				   ?>
+
+					<ul class="header-links pull-right">
+						<li><a href="Login/logout.php"><i class="fa fa-user-o"></i> Log Out</a></li>
+					</ul>
+					
+				<?php
+				}
+			  }
+				  ?>
+
+				  <?php
+
+					if (!isset($_SESSION['user_id'])){
+						?>
+
+						<ul class="header-links pull-right">
+						<li><a href="Login/login.php"><i class="fa fa-user-o"></i> Log In</a></li>
+						
+					</ul>
+				
+
+		
+
+<?php
+}
+?>
+				
 			</div>
+		</div>
 			<!-- /TOP HEADER -->
 
 			<!-- MAIN HEADER -->
@@ -62,7 +104,7 @@
 						<!-- LOGO -->
 						<div class="col-md-3">
 							<div class="header-logo">
-								<a href="index.html" class="logo">
+								<a href="index.php" class="logo">
 									<img src="./img/logo.png" alt="">
 								</a>
 							</div>
@@ -73,14 +115,14 @@
 						<div class="col-md-6">
 							<div class="header-search">
 								<form>
-									<select class="input-select">
+									<select class="input-select" id = "categorias">
 										<option value="0">All Categories</option>
-										<option value="1">Deportivos</option>
-										<option value="1">Clasicos</option>
-										<option value="1">4 X 4</option>
+										<option value="1">Deportivo</option>
+										<option value="2">Clasico</option>
+										<option value="3">4X4</option>
 									</select>
 									<input class="input" placeholder="Search here">
-									<button class="search-btn">Search</button>
+									<button type="button" class="search-btn" onclick="Categorias()">Search</button>
 								</form>
 							</div>
 						</div>
@@ -134,14 +176,7 @@
 								</div>
 								<!-- /Cart -->
 
-								<!-- Menu Toogle -->
-								<div class="menu-toggle">
-									<a href="#">
-										<i class="fa fa-bars"></i>
-										<span>Menu</span>
-									</a>
-								</div>
-								<!-- /Menu Toogle -->
+								
 							</div>
 						</div>
 						<!-- /ACCOUNT -->
@@ -168,19 +203,19 @@
 					<div class="col-md-5 col-md-push-2">
 						<div id="product-main-img">
 							<div class="product-preview">
-								<img src="./img/mustang1.jpg" alt="">
+								<img src="./img/Lambo-Clasi.jpg" alt="">
 							</div>
 
 							<div class="product-preview">
-								<img src="./img/mustang.jpg" alt="">
+								<img src="./img/lambo350.jpg" alt="">
 							</div>
 
 							<div class="product-preview">
-								<img src="./img/mustang2.jpg" alt="">
+								<img src="./img/lambo350b.jpg" alt="">
 							</div>
 
 							<div class="product-preview">
-								<img src="./img/mustang3.jpg" alt="">
+								<img src="./img/lambo350c.jpg" alt="">
 							</div>
 						</div>
 					</div>
@@ -190,19 +225,19 @@
 					<div class="col-md-2  col-md-pull-5">
 						<div id="product-imgs">
 							<div class="product-preview">
-								<img src="./img/mustang1.jpg" alt="">
+								<img src="./img/Lambo-Clasi.jpg" alt="">
 							</div>
 
 							<div class="product-preview">
-								<img src="./img/mustang.jpg" alt="">
+								<img src="./img/lambo350.jpg" alt="">
 							</div>
 
 							<div class="product-preview">
-								<img src="./img/mustang2.jpg" alt="">
+								<img src="./img/lambo350b.jpg" alt="">
 							</div>
 
 							<div class="product-preview">
-								<img src="./img/mustang3.jpg" alt="">
+								<img src="./img/lambo350c.jpg" alt="">
 							</div>
 						</div>
 					</div>
@@ -211,7 +246,7 @@
 					<!-- Product details -->
 					<div class="col-md-5">
 						<div class="product-details">
-							<h2 class="product-name">Mustang 2018</h2>
+							<h2 class="product-name">Lamborghini 350 GT</h2>
 							<div>
 								<div class="product-rating">
 									<i class="fa fa-star"></i>
@@ -223,10 +258,12 @@
 								<a class="review-link" href="#redireccion">Add your review</a>
 							</div>
 							<div>
-								<h3 class="product-price">49.501 € <del class="product-old-price">59.877 €</del></h3>
+								<h3 class="product-price">108.050€ </h3>
 								<span class="product-available">In Stock</span>
 							</div>
-							<p>Esta nueva tecnología de suspensión de alto rendimiento está disponible por primera vez en nuestro Mustang. El revolucionario MagneRide™ Damping System responde a las condiciones de la carretera y a tu forma de conducir, 1000 veces por segundo, y puede ajustarse casi al instante a la suspensión de cada rueda. Gracias a un innovador sistema que utiliza la viscosidad de un líquido especial con partículas metálicas en cada amortiguador, que se puede controlar electrónicamente mediante su exposición a energía magnética. </p>
+							<p>El Lamborghini 350 GT es un automóvil deportivo, fue el primer modelo producido por Lamborghini, basado en el prototipo 350 GTV, en primer lugar se mostró en el Salón del Automóvil de Ginebra en 1964.
+
+El nombre del 350 GT deriva de su motor, que es un V12 de 3,5 litros con levas cuádruples. El 350 GT tiene suspensión trasera independiente, mientras que Ferrari y muchos otros fabricantes aún utilizaban ejes traseros. </p>
 
 							<div class="product-options">
 								<label>
@@ -242,8 +279,9 @@
 								<label>
 									Color
 									<select class="input-select">
-										<option value="0">Blanco</option>
-										<option value="1">Naranja</option>
+                                        <option value="0">Rojo</option>
+										<option value="1">Blanco</option>
+                                        <option value="2">Azul</option>
 									</select>
 								</label>
 							</div>
@@ -257,7 +295,7 @@
 
 							<ul class="product-links">
 								<li>Category:</li>
-								<li><a href="deportivos.html">Deportivos</a></li>
+								<li><a href="clasicos.php">Clasicos</a></li>
 								
 							</ul>
 
@@ -290,10 +328,13 @@
 								<div id="tab1" class="tab-pane fade in active">
 									<div class="row">
 										<div class="col-md-12">
-											<p>Pocas cosas hacen que el corazón lata tan rápido como escuchar el rugido de un motor potente. Prepárate a oír el rugido de tu nuevo Mustang gracias a su escape de válvulas activas. Esta nueva tecnología ha sido diseñada para generar un estruendo y un rugido más profundo dependiendo de la pisada en el acelerador. Y si la ocasión lo requiere, activa el modo silencioso para entornos más tranquilos.<br><br>
+											<p>El Lamborghini 350 GT es un automóvil deportivo, fue el primer modelo producido por Lamborghini, basado en el prototipo 350 GTV, en primer lugar se mostró en el Salón del Automóvil de Ginebra en 1964.<br><br>
 
-												SYNC 3 es nuestra versión más avanzada hasta la fecha. Es más rápido y fácil de usar, con comandos de voz mejorados y muchas otras funciones. La nueva interfaz tiene botones más grandes para facilitar su uso, mientras que la pantalla táctil de 20,32 cm (8”) ahora te permite pellizcar y deslizar, como en los smartphones o las tabletas, para una navegación mucho más intuitiva. SYNC 3 también incorpora AppLink, Car Play de Apple y Android Auto para mostrar la información de tu smartphone en la pantalla táctil. <br><br>
-												Mediante una cámara y un radar frontales, el asistente precolisión con detección de peatones detecta vehículos y personas en la carretera o que podrían cruzar la trayectoria de tu vehículo y te advierte de su presencia. Si no respondes, el sistema activa los frenos de manera automática. Esta nueva tecnología ha sido diseñada para ayudarte a reducir la gravedad de los accidentes o evitarlos, y funciona entre 5 km/h y la velocidad máxima de tu vehículo.</p>
+                                            El nombre del 350 GT deriva de su motor, que es un V12 de 3,5 litros con levas cuádruples. El 350 GT tiene suspensión trasera independiente, mientras que Ferrari y muchos otros fabricantes aún utilizaban ejes traseros.<br><br>
+
+                                            La carrocería del 350 GT es una controvertida 2+1 semi-fastback que fue diseñada por la empresa de diseño Carrozzeria Touring, situada en Milán (Italia).<br><br>
+
+                                            Entre los años 1964 y 1966 se fabricaron 120 unidades del 350 GT. </p>
 										</div>
 									</div>
 								</div>
@@ -536,7 +577,7 @@
 							</div>
 							<div class="product-body">
 								<p class="product-category">Deportivos</p>
-								<h3 class="product-name"><a href="audir8.html">Audi R8</a></h3>
+								<h3 class="product-name"><a href="audir8.php">Audi R8</a></h3>
 								<h4 class="product-price">260.085€ <del class="product-old-price">280.500€</del></h4>
 								<div class="product-rating">
 										<i class="fa fa-star"></i>
@@ -563,7 +604,7 @@
                                 </div>
                                 <div class="product-body">
                                     <p class="product-category">Deportivos</p>
-                                    <h3 class="product-name"><a href="product.html">Nissan GTR</a></h3>
+                                    <h3 class="product-name"><a href="product.php">Nissan GTR</a></h3>
                                     <h4 class="product-price">108.050€</h4>
                                     <div class="product-rating">
                                         <i class="fa fa-star"></i>
@@ -590,7 +631,7 @@
 							</div>
 							<div class="product-body">
 								<p class="product-category">Deportivos</p>
-								<h3 class="product-name"><a href="bmwM8.html">BMW M3</a></h3>
+								<h3 class="product-name"><a href="bmwM8.php">BMW M3</a></h3>
 								<h4 class="product-price">86.000€<del class="product-old-price">92.000€</del></h4>
 								<div class="product-rating">
 									<i class="fa fa-star"></i>
@@ -615,7 +656,7 @@
 							</div>
 							<div class="product-body">
 								<p class="product-category">Deportivos</p>
-								<h3 class="product-name"><a href="lambo.html">Lamborghini Sesto Elemento</a></h3>
+								<h3 class="product-name"><a href="lambo.php">Lamborghini Sesto Elemento</a></h3>
 								<h4 class="product-price">450.000€ <del class="product-old-price">502.000€</del></h4>
 								<div class="product-rating">
 									<i class="fa fa-star"></i>
@@ -699,9 +740,9 @@
 							<div class="footer">
 								<h3 class="footer-title">Categories</h3>
 								<ul class="footer-links">
-									<li><a href="deportivos.html">Deportivos</a></li>
-									<li><a href="clasicos.html">Clasicos</a></li>
-									<li><a href="#">4X4</a></li>
+									<li><a href="deportivos.php">Deportivos</a></li>
+									<li><a href="clasicos.php">Clasicos</a></li>
+									<li><a href="SUV.php">4X4</a></li>
 								</ul>
 							</div>
 						</div>

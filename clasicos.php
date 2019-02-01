@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php session_start(); ?>
 <html lang="en">
 
 <head>
@@ -48,9 +49,50 @@
 					<li><a href="#"><i class="fa fa-envelope-o"></i> Casr&Cosas@yahoo.net</a></li>
 					<li><a href="#"><i class="fa fa-map-marker"></i> 1734 Stonecoal Road</a></li>
 				</ul>
-				<ul class="header-links pull-right">
-					<li><a href="Login/index.html"><i class="fa fa-user-o"></i> My Account</a></li>
-				</ul>
+
+				<?php
+					if (isset($_SESSION['user_id'])){
+						if (37==($_SESSION['user_id'])){
+				   ?>
+					<ul class="header-links pull-right">
+						<li><a href="Login/logout.php"><i class="fa fa-user-o"></i> Log Out</a></li>
+					</ul>
+					<?php
+				}
+			  }
+				  ?>
+
+				<?php
+					if (isset($_SESSION['user_id'])){
+						if (37!=($_SESSION['user_id'])){
+				   ?>
+
+					<ul class="header-links pull-right">
+						<li><a href="Login/logout.php"><i class="fa fa-user-o"></i> Log Out</a></li>
+					</ul>
+					
+				<?php
+				}
+			  }
+				  ?>
+
+				  <?php
+
+					if (!isset($_SESSION['user_id'])){
+						?>
+
+						<ul class="header-links pull-right">
+						<li><a href="Login/login.php"><i class="fa fa-user-o"></i> Log In</a></li>
+						
+					</ul>
+				
+
+		
+
+<?php
+}
+?>
+				
 			</div>
 		</div>
 		<!-- /TOP HEADER -->
@@ -75,18 +117,19 @@
 					<div class="col-md-6">
 						<div class="header-search">
 							<form>
-								<select class="input-select">
+								<select class="input-select" id = "categorias">
 									<option value="0">All Categories</option>
-									<option value="1">Category 01</option>
-									<option value="1">Category 02</option>
+									<option value="1">Deportivo</option>
+									<option value="2">Clasico</option>
+									<option value="3">4X4</option>
 								</select>
 								<input class="input" placeholder="Search here">
-								<button class="search-btn">Search</button>
+								<button type="button" class="search-btn" onclick="Categorias()">Search</button>
 							</form>
 						</div>
 					</div>
 					<!-- /SEARCH BAR -->
-
+					
 					<!-- ACCOUNT -->
 					<div class="col-md-3 clearfix">
 						<div class="header-ctn">
@@ -137,14 +180,7 @@
 							</div>
 							<!-- /Cart -->
 
-							<!-- Menu Toogle -->
-							<div class="menu-toggle">
-								<a href="#">
-									<i class="fa fa-bars"></i>
-									<span>Menu</span>
-								</a>
-							</div>
-							<!-- /Menu Toogle -->
+							
 						</div>
 					</div>
 					<!-- /ACCOUNT -->
@@ -193,7 +229,7 @@
 						<div class="checkbox-filter">
 
 							<div class="input-checkbox">
-								<input type="checkbox" id="category-1" display= "inline"; onchange="checkDeportivos()">
+								<input type="checkbox" id="category-1" display= "inline"; onchange="checkClasicos()">
 								<label for="category-1">
 									<span></span>
 									Lamborghini
@@ -202,34 +238,34 @@
 							</div>
 
 							<div class="input-checkbox">
-								<input type="checkbox" id="category-2" display= "inline"; onchange="checkDeportivos()">
+								<input type="checkbox" id="category-2" display= "inline"; onchange="checkClasicos()">
 								<label for="category-2">
 									<span></span>
-									Audi
+									Mercedes
 									<small>(1)</small>
 								</label>
 							</div>
 
 							<div class="input-checkbox">
-								<input type="checkbox" id="category-3" display= "inline"; onchange="checkDeportivos()">
+								<input type="checkbox" id="category-3" display= "inline"; onchange="checkClasicos()">
 								<label for="category-3">
 									<span></span>
-									BMW
+									Porsche
 									<small>(1)</small>
 								</label>
 							</div>
 
 							<div class="input-checkbox">
-								<input type="checkbox" id="category-4" display= "inline"; onchange="checkDeportivos()">
+								<input type="checkbox" id="category-4" display= "inline"; onchange="checkClasicos()">
 								<label for="category-4">
 									<span></span>
-									Nissan
+									Ferrari
 									<small>(1)</small>
 								</label>
 							</div>
 
 							<div class="input-checkbox">
-								<input type="checkbox" id="category-5" display= "inline"; onchange="checkDeportivos()">
+								<input type="checkbox" id="category-5" display= "inline"; onchange="checkClasicos()">
 								<label for="category-5">
 									<span></span>
 									Ford
@@ -240,13 +276,6 @@
 					</div>
 					<!-- /aside Widget -->
 
-<!-- aside Widget --><!-- aside Widget --><!-- aside Widget -->
-
-					<!-- aside Widget -->
-
-					<!-- /aside Widget -->
-
-					<!-- aside Widget -->
 					<div class="aside">
 						<h3 class="aside-title">Top selling</h3>
 						<div class="product-widget">
@@ -255,29 +284,29 @@
 							</div>
 							<div class="product-body">
 								<p class="product-category">Category</p>
-								<h3 class="product-name"><a href="product.html">Nissan GTR</a></h3>
-								<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+								<h3 class="product-name"><a href="product.php">Nissan GTR</a></h3>
+								<h4 class="product-price">108.050€ </h4>
 							</div>
 						</div>
 
 						<div class="product-widget">
 							<div class="product-img">
-								<img src="./img/r8.jpg" alt="">
+								<img src="./img/r81.jpg" alt="">
 							</div>
 							<div class="product-body">
 								<p class="product-category">Category</p>
-								<h3 class="product-name"><a href="audir8.html">Audi R8</a></h3>
-								<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+								<h3 class="product-name"><a href="audir8.php">Audi R8</a></h3>
+								<h4 class="product-price">280.085€ </h4>
 							</div>
 						</div>
 
 						<div class="product-widget">
 							<div class="product-img">
-								<img src="./img/bmw.jpg" alt="">
+								<img src="./img/bmw2.jpg" alt="">
 							</div>
 							<div class="product-body">
 								<p class="product-category">Category</p>
-								<h3 class="product-name"><a href="bmwM8.html">BMW M3</a></h3>
+								<h3 class="product-name"><a href="bmwM8.php">BMW M3</a></h3>
 								<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
 							</div>
 						</div>
@@ -301,21 +330,18 @@
 
 
 
-						<div class="col-md-4 col-xs-6" id="Nissan" style="display:inline;">
+						<div class="col-md-4 col-xs-6" id="Lambo" style="display:inline;">
 
 							<div class="product">
 								<div class="product-img">
-									<img src="./img/gtr1.jpg" alt="">
-									<div class="product-label">
-										<span class="new">NEW</span>
-									</div>
+									<img src="./img/Lambo-Clasi.jpg" alt="">
+									
 								</div>
 								<div class="product-body">
 
-									<p class="product-category">Deportivos</p>
-									<p class="product-category">Category</p>
+									<p class="product-category">Clasicos</p>
 
-									<h3 class="product-name"><a href="product.html">Nissan GTR</a></h3>
+									<h3 class="product-name"><a href="Lamborghini_350gt.php">Lamborghini 350GT</a></h3>
 									<h4 class="product-price">$108.050 </h4>
 									<div class="product-rating">
 										<i class="fa fa-star"></i>
@@ -337,18 +363,15 @@
 						<!-- /product -->
 
 						<!-- product -->
-						<div class="col-md-4 col-xs-6" id="Audi" style="display:inline;">
+						<div class="col-md-4 col-xs-6" id="Mercedes" style="display:inline;">
 							<div class="product">
 								<div class="product-img">
-									<img src="./img/r81.jpg" alt="">
-									<div class="product-label">
-										<span class="sale">-30%</span>
-										<span class="new">NEW</span>
-									</div>
+									<img src="./img/mercedes.jpg" alt="">
+									
 								</div>
 								<div class="product-body">
-									<p class="product-category">Deportivos</p>
-									<h3 class="product-name"><a href="audir8.html">Audi R8</a></h3>
+									<p class="product-category">Clasicos</p>
+									<h3 class="product-name"><a href="audir8.html">Mercedes 280 SE</a></h3>
 									<h4 class="product-price">$260.085 <del class="product-old-price">$990.00</del></h4>
 									<div class="product-rating">
 										<i class="fa fa-star"></i>
@@ -369,14 +392,14 @@
 						<div class="clearfix visible-sm visible-xs"></div>
 
 						<!-- product -->
-						<div class="col-md-4 col-xs-6" id="BMW" style="display:inline;">
+						<div class="col-md-4 col-xs-6" id="Porsche" style="display:inline;">
 							<div class="product">
 								<div class="product-img">
-									<img src="./img/bmw2.jpg" alt="">
+									<img src="./img/porsche 356.jpg" alt="">
 								</div>
 								<div class="product-body">
-									<p class="product-category">Deportivos</p>
-									<h3 class="product-name"><a href="bmwM8.html">BMW M3</a></h3>
+									<p class="product-category">Clasicos</p>
+									<h3 class="product-name"><a href="bmwM8.html">Porsche 365</a></h3>
 									<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
 									<div class="product-rating">
 										<i class="fa fa-star"></i>
@@ -399,14 +422,14 @@
 						<div class="clearfix visible-lg visible-md"></div>
 
 						<!-- product -->
-						<div class="col-md-4 col-xs-6" id="Mustang" style="display:inline;">
+						<div class="col-md-4 col-xs-6" id="Ferrari" style="display:inline;">
 							<div class="product">
 								<div class="product-img">
-									<img src="./img/mustang1.jpg" alt="">
+									<img src="./img/ferrari.jpg" alt="">
 								</div>
 								<div class="product-body">
-									<p class="product-category">Deportivos</p>
-									<h3 class="product-name"><a href="mustang.html">Ford Mustang 2018</a></h3>
+									<p class="product-category">Clasicos</p>
+									<h3 class="product-name"><a href="mustang.html">Ferrari 400GT</a></h3>
 									<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
 									<div class="product-rating">
 										<i class="fa fa-star"></i>
@@ -431,14 +454,14 @@
 						
 
 						<!-- product -->
-						<div class="col-md-4 col-xs-6" id="Lambo" style="display:inline;">
+						<div class="col-md-4 col-xs-6" id="Shelby" style="display:inline;">
 							<div class="product">
 								<div class="product-img">
-									<img src="./img/lambo.png" alt="">
+									<img src="./img/shelby.jpg" alt="">
 								</div>
 								<div class="product-body">
-									<p class="product-category">Deportivos</p>
-									<h3 class="product-name"><a href="lambo.html">Lamborghini Sesto Elemento</a></h3>
+									<p class="product-category">Clasicos</p>
+									<h3 class="product-name"><a href="lambo.html">Ford Mustang Shelby 1967</a></h3>
 									<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
 									<div class="product-rating">
 										<i class="fa fa-star"></i>
@@ -541,7 +564,7 @@
 							<ul class="footer-links">
 								<li><a href="deportivos.html">Deportivos</a></li>
 								<li><a href="clasicos.html">Clasicos</a></li>
-								<li><a href="#">4X4</a></li>
+								<li><a href="SUV.php">4X4</a></li>
 							</ul>
 						</div>
 					</div>
@@ -564,7 +587,7 @@
 							<h3 class="footer-title">Service</h3>
 							<ul class="footer-links">
 								<li><a href="#">My Account</a></li>
-								<li><a href="product.html">View Cart</a></li>
+								<li><a href="#">View Cart</a></li>
 							</ul>
 						</div>
 					</div>

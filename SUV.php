@@ -75,13 +75,14 @@
 					<div class="col-md-6">
 						<div class="header-search">
 							<form>
-								<select class="input-select">
+								<select class="input-select" id = "categorias">
 									<option value="0">All Categories</option>
-									<option value="1">Category 01</option>
-									<option value="1">Category 02</option>
+									<option value="1">Deportivo</option>
+									<option value="2">Clasico</option>
+									<option value="3">4X4</option>
 								</select>
 								<input class="input" placeholder="Search here">
-								<button class="search-btn">Search</button>
+								<button type="button" class="search-btn" onclick="Categorias()">Search</button>
 							</form>
 						</div>
 					</div>

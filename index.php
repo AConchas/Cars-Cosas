@@ -125,7 +125,7 @@
 										<option value="3">4X4</option>
 									</select>
 									<input class="input" placeholder="Search here">
-									<button class="search-btn" onclick="Categorias()">Search</button>
+									<button type="button" class="search-btn" onclick="Categorias()">Search</button>
 								</form>
 							</div>
 						</div>
@@ -216,7 +216,7 @@
 							</div>
 							<div class="shop-body">
 								<h3>Coches<br>Deportivos</h3>
-								<a href="deportivos.html" class="cta-btn">Ir Ahora <i class="fa fa-arrow-circle-right"></i></a>
+								<a href="deportivos.php" class="cta-btn">Ir Ahora <i class="fa fa-arrow-circle-right"></i></a>
 							</div>
 						</div>
 					</div>
@@ -230,7 +230,7 @@
 							</div>
 							<div class="shop-body">
 								<h3>Coches<br>Clasicos</h3>
-								<a href="clasicos.html" class="cta-btn">Ir Ahora <i class="fa fa-arrow-circle-right"></i></a>
+								<a href="clasicos.php" class="cta-btn">Ir Ahora <i class="fa fa-arrow-circle-right"></i></a>
 							</div>
 						</div>
 					</div>
@@ -244,7 +244,7 @@
 							</div>
 							<div class="shop-body">
 								<h3>Coches<br>4X4</h3>
-								<a href="SUV.html" class="cta-btn">Ir Ahora <i class="fa fa-arrow-circle-right"></i></a>
+								<a href="SUV.php" class="cta-btn">Ir Ahora <i class="fa fa-arrow-circle-right"></i></a>
 							</div>
 						</div>
 					</div>
@@ -270,7 +270,7 @@
 					<!-- section title -->
 					<div class="col-md-12">
 						<div class="section-title">
-							<h3 class="title">New Products</h3>
+							<h3 class="title">PRODUCTOS</h3>
 						</div>
 					</div>
 					<!-- /section title -->
@@ -293,7 +293,7 @@
 											</div>
 											<div class="product-body">
 												<p class="product-category">Deportivos</p>
-												<h3 class="product-name"><a href="product.html">Nissan GTR</a></h3>
+												<h3 class="product-name"><a href="product.php">Nissan GTR</a></h3>
 												<h4 class="product-price">108.050€ <del class="product-old-price">120.000€</del></h4>
 												<div class="product-rating">
 													<i class="fa fa-star"></i>
@@ -321,7 +321,7 @@
 											</div>
 											<div class="product-body">
 												<p class="product-category">Deportivos</p>
-												<h3 class="product-name"><a href="audir8.html">AUDI GTR</a></h3>
+												<h3 class="product-name"><a href="audir8.php">AUDI GTR</a></h3>
 												<h4 class="product-price">260.085€ <del class="product-old-price">280.500€</del></h4>
 												<div class="product-rating">
 													<i class="fa fa-star"></i>
@@ -345,7 +345,7 @@
 											</div>
 											<div class="product-body">
 												<p class="product-category">Clasicos</p>
-												<h3 class="product-name"><a href="Lamborghini_350gt.html">Lamborghini 350GT</a></h3>
+												<h3 class="product-name"><a href="Lamborghini_350gt.php">Lamborghini 350GT</a></h3>
 												<h4 class="product-price">108.050€</h4>
 												<div class="product-rating">
 												<div class="product-rating">
@@ -370,7 +370,7 @@
 											</div>
 											<div class="product-body">
 												<p class="product-category">Clasicos</p>
-												<h3 class="product-name"><a href="Mercedes_280_se.html">MERCEDES 280 SE</a></h3>
+												<h3 class="product-name"><a href="Mercedes_280_se.php">MERCEDES 280 SE</a></h3>
 												<h4 class="product-price">260.085€ <del class="product-old-price">280.085€</del></h4>
 												<div class="product-rating">
 													<i class="fa fa-star"></i>
@@ -393,7 +393,7 @@
 											</div>
 											<div class="product-body">
 												<p class="product-category">4X4</p>
-												<h3 class="product-name"><a href="Mercedes_eqc.html">MERCEDES EQC</a></h3>
+												<h3 class="product-name"><a href="Mercedes_eqc.php">MERCEDES EQC</a></h3>
 												<h4 class="product-price">260.085€ <del class="product-old-price">280.085€</del></h4>
 												<div class="product-rating">
 													<i class="fa fa-star"></i>
@@ -437,7 +437,7 @@
 							<br><br>
 							<h2 class="text-uppercase" align="center">New Collection</h2>
 							
-							<a class="primary-btn cta-btn" href="deportivos.html">Shop now</a>
+							<a class="primary-btn cta-btn" href="deportivos.php">Shop now</a>
 						</div>
 					</div>
 				</div>
@@ -480,7 +480,7 @@
 											</div>
 											<div class="product-body">
 												<p class="product-category">Deportivos</p>
-												<h3 class="product-name"><a href="product.html">Nissan GTR</a></h3>
+												<h3 class="product-name"><a href="product.php">Nissan GTR</a></h3>
 												<h4 class="product-price">108.050€ <del class="product-old-price">120.000€</del></h4>
 												<div class="product-rating">
 													<i class="fa fa-star"></i>
@@ -508,7 +508,7 @@
 											</div>
 											<div class="product-body">
 												<p class="product-category">Deportivos</p>
-												<h3 class="product-name"><a href="audir8.html">AUDI GTR</a></h3>
+												<h3 class="product-name"><a href="audir8.php">AUDI GTR</a></h3>
 												<h4 class="product-price">260.085€ <del class="product-old-price">280.500€</del></h4>
 												<div class="product-rating">
 													<i class="fa fa-star"></i>
@@ -532,7 +532,7 @@
 											</div>
 											<div class="product-body">
 												<p class="product-category">Clasicos</p>
-												<h3 class="product-name"><a href="bmwM8.html">BMW M3</a></h3>
+												<h3 class="product-name"><a href="bmwM8.php">BMW M3</a></h3>
 												<h4 class="product-price">980.000€</h4>
 												<div class="product-rating">
 												<div class="product-rating">
@@ -557,7 +557,7 @@
 											</div>
 											<div class="product-body">
 												<p class="product-category">Clasicos</p>
-												<h3 class="product-name"><a href="Mercedes_280_se.html">MERCEDES 280 SE</a></h3>
+												<h3 class="product-name"><a href="Mercedes_280_se.php">MERCEDES 280 SE</a></h3>
 												<h4 class="product-price">260.085€ <del class="product-old-price">280.085€</del></h4>
 												<div class="product-rating">
 													<i class="fa fa-star"></i>
@@ -580,7 +580,7 @@
 											</div>
 											<div class="product-body">
 												<p class="product-category">4X4</p>
-												<h3 class="product-name"><a href="Mercedes_eqc.html">MERCEDES EQC</a></h3>
+												<h3 class="product-name"><a href="Mercedes_eqc.php">MERCEDES EQC</a></h3>
 												<h4 class="product-price">260.085€ <del class="product-old-price">280.085€</del></h4>
 												<div class="product-rating">
 													<i class="fa fa-star"></i>
@@ -674,7 +674,7 @@
 						<div class="footer">
 							<h3 class="footer-title">Categories</h3>
 							<ul class="footer-links">
-								<li><a href="deportivos.html">Deportivos</a></li>
+								<li><a href="deportivos.php">Deportivos</a></li>
 								<li><a href="clasicos.html">Clasicos</a></li>
 								<li><a href="#">4X4</a></li>
 							</ul>

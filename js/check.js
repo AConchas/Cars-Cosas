@@ -173,19 +173,19 @@ function Categorias() {
     
     if (categoria == 1) {
         
-        location.href = "../deportivos.html";
+        location.href = "deportivos.php";
 
     }
     
     else if (categoria == 2) {
 
-        location.href = "../clasicos.html";
+        location.href = "clasicos.php";
 
     }
 
     else{
 
-        location.href = "../SUV.html";
+        location.href = "SUV.php";
 
     }
     }
