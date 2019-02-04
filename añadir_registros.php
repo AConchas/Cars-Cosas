@@ -14,7 +14,7 @@
 
 		<!-- Bootstrap -->
 		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
-
+        <link type="text/css" rel="stylesheet" href="css/formulario.css"/>
 		<!-- Slick -->
 		<link type="text/css" rel="stylesheet" href="css/slick.css"/>
 		<link type="text/css" rel="stylesheet" href="css/slick-theme.css"/>
@@ -200,9 +200,77 @@
 			<!-- /MAIN HEADER -->
 		</header>
 		<!-- /HEADER -->
+<div>
+		<section class="page-section about-heading">
 
-		
+              <form action="Erregistroak/gehitu.php" method="post">
+<br>
+                <h1 align="center" id="titulo"> Kotxeak Gehitu </h1>
+                <br><br>
+                <div align="center">
+                    <input type="text" id="marca" name="marca" placeholder="Marca"/>
+                </div>
+                <br>
+                <div align="center">
+                    <input type="text" id="modelo" name="modelo" placeholder="Modelo"/>
+                </div>
+                <br>
+                <div align="center">
+                    <input type="text" id="tipo" name="tipo" placeholder="Deportivo/Clasico/4X4"/>
+                </div>
+                <br>
+                <div align="center">
+                    <input type="text" id="prezio" name="prezio" placeholder="ej: 80000€"/>
+                </div>
+                <br>
+              
 
+
+                <div class="button" align="center">
+                    <button type="submit">Gehitu</button>
+                    <button type="reset">Reset</button>
+                </div>
+
+        </form>
+        <br><br>
+        <p align="center">------------------------------------------------------------------------------------</p>
+        <br><br>
+        <h1 align="center"> Usuarioak </h1>
+            <br>
+
+            <?php
+                include("Login/Konexioa.php");
+                $link=ConnectDataBase();
+              $result=mysqli_query($link,"select * from users");
+
+            ?>
+            <table align = "center" class="table table-hover">
+              <tr>
+                <th>Id</th>
+                <th>Email</th>
+                <th>Password</th>
+              </tr>
+
+              <?php
+                while($row = mysqli_fetch_array($result))
+                {
+                  printf("
+                      <tr>
+                        <td>%s</td>
+                        <td>%s</td>
+                        <td>%s</td>
+                        <td><a href =\"Erregistroak/gehitu_user.php?email=%s\"><img src=\"img/Borrar.png\" width=\"20\" /></a></td>
+                      </tr>
+                    " , $row["id"], $row["email"], $row["password"], $row["email"]);
+                }
+                  mysqli_free_result($result);
+                  mysqli_close($link);
+              ?>
+            </table>
+
+
+            </section>
+</div>
 
 		
 
