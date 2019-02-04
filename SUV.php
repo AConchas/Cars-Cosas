@@ -306,7 +306,7 @@
 
 									<p class="product-category">4x4</p>
 
-									<h3 class="product-name"><a href="product.html">Nissan Qashqi</a></h3>
+									<h3 class="product-name"><a href="Nissan_Qasqhai.php">Nissan Qashqi</a></h3>
 									<h4 class="product-price">$108.050 </h4>
 									<div class="product-rating">
 										<i class="fa fa-star"></i>
@@ -339,7 +339,7 @@
 								</div>
 								<div class="product-body">
 									<p class="product-category">4x4</p>
-									<h3 class="product-name"><a href="audir8.html">Mercedes EQC</a></h3>
+									<h3 class="product-name"><a href="Mercedes_EQC.php">Mercedes EQC</a></h3>
 									<h4 class="product-price">$260.085 <del class="product-old-price">$990.00</del></h4>
 									<div class="product-rating">
 										<i class="fa fa-star"></i>
@@ -367,7 +367,7 @@
 								</div>
 								<div class="product-body">
 									<p class="product-category">4x4</p>
-									<h3 class="product-name"><a href="bmwM8.html">BMW X7</a></h3>
+									<h3 class="product-name"><a href="BMW_X7.php">BMW X7</a></h3>
 									<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
 									<div class="product-rating">
 										<i class="fa fa-star"></i>
@@ -397,7 +397,7 @@
 								</div>
 								<div class="product-body">
 									<p class="product-category">4x4</p>
-									<h3 class="product-name"><a href="mustang.html">Audi SQ7</a></h3>
+									<h3 class="product-name"><a href="Audi_SQ7.php">Audi SQ7</a></h3>
 									<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
 									<div class="product-rating">
 										<i class="fa fa-star"></i>
@@ -429,7 +429,7 @@
 								</div>
 								<div class="product-body">
 									<p class="product-category">4x4</p>
-									<h3 class="product-name"><a href="lambo.html">Mercedes G63 AMG</a></h3>
+									<h3 class="product-name"><a href="Mercedes_6x6.php">Mercedes G63 AMG</a></h3>
 									<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
 									<div class="product-rating">
 										<i class="fa fa-star"></i>

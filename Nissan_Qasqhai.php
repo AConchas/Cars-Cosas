@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php session_start(); ?>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -40,17 +41,58 @@
 		<header>
 			<!-- TOP HEADER -->
 			<div id="top-header">
-				<div class="container">
-					<ul class="header-links pull-left">
-						<li><a href="#"><i class="fa fa-phone"></i> 943-20-89-89</a></li>
-						<li><a href="#"><i class="fa fa-envelope-o"></i> Casr&Cosas@yahoo.net</a></li>
-						<li><a href="#"><i class="fa fa-map-marker"></i> 1734 Stonecoal Road</a></li>
-					</ul>
+			<div class="container">
+				<ul class="header-links pull-left">
+					<li><a href="#"><i class="fa fa-phone"></i> +021-95-51-84</a></li>
+					<li><a href="#"><i class="fa fa-envelope-o"></i> Casr&Cosas@yahoo.net</a></li>
+					<li><a href="#"><i class="fa fa-map-marker"></i> 1734 Stonecoal Road</a></li>
+				</ul>
+
+				<?php
+					if (isset($_SESSION['user_id'])){
+						if (37==($_SESSION['user_id'])){
+				   ?>
 					<ul class="header-links pull-right">
-						<li><a href="Login/index.html"><i class="fa fa-user-o"></i> My Account</a></li>
+						<li><a href="Login/logout.php"><i class="fa fa-user-o"></i> Log Out</a></li>
 					</ul>
-				</div>
+					<?php
+				}
+			  }
+				  ?>
+
+				<?php
+					if (isset($_SESSION['user_id'])){
+						if (37!=($_SESSION['user_id'])){
+				   ?>
+
+					<ul class="header-links pull-right">
+						<li><a href="Login/logout.php"><i class="fa fa-user-o"></i> Log Out</a></li>
+					</ul>
+					
+				<?php
+				}
+			  }
+				  ?>
+
+				  <?php
+
+					if (!isset($_SESSION['user_id'])){
+						?>
+
+						<ul class="header-links pull-right">
+						<li><a href="Login/login.php"><i class="fa fa-user-o"></i> Log In</a></li>
+						
+					</ul>
+				
+
+		
+
+<?php
+}
+?>
+				
 			</div>
+		</div>
 			<!-- /TOP HEADER -->
 
 			<!-- MAIN HEADER -->
@@ -73,14 +115,14 @@
 						<div class="col-md-6">
 							<div class="header-search">
 								<form>
-									<select class="input-select">
+									<select class="input-select" id = "categorias">
 										<option value="0">All Categories</option>
-										<option value="1">Deportivos</option>
-										<option value="1">Clasicos</option>
-										<option value="1">4 X 4</option>
+										<option value="1">Deportivo</option>
+										<option value="2">Clasico</option>
+										<option value="3">4X4</option>
 									</select>
 									<input class="input" placeholder="Search here">
-									<button class="search-btn">Search</button>
+									<button type="button" class="search-btn" onclick="Categorias()">Search</button>
 								</form>
 							</div>
 						</div>
@@ -134,14 +176,7 @@
 								</div>
 								<!-- /Cart -->
 
-								<!-- Menu Toogle -->
-								<div class="menu-toggle">
-									<a href="#">
-										<i class="fa fa-bars"></i>
-										<span>Menu</span>
-									</a>
-								</div>
-								<!-- /Menu Toogle -->
+								
 							</div>
 						</div>
 						<!-- /ACCOUNT -->
@@ -168,19 +203,19 @@
 					<div class="col-md-5 col-md-push-2">
 						<div id="product-main-img">
 							<div class="product-preview">
-								<img src="./img/gtr1.jpg" alt="">
+								<img src="./img/qashqai.jpg" alt="">
 							</div>
 
 							<div class="product-preview">
-								<img src="./img/gtr2.jpg" alt="">
+								<img src="./img/qashqai2.jpg" alt="">
 							</div>
 
 							<div class="product-preview">
-								<img src="./img/gtr3.jpg" alt="">
+								<img src="./img/qashqai3.jpg" alt="">
 							</div>
 
 							<div class="product-preview">
-								<img src="./img/gtr4.jpg" alt="">
+								<img src="./img/qashqai4.jpg" alt="">
 							</div>
 						</div>
 					</div>
@@ -190,19 +225,19 @@
 					<div class="col-md-2  col-md-pull-5">
 						<div id="product-imgs">
 							<div class="product-preview">
-								<img src="./img/gtr1.jpg" alt="">
+								<img src="./img/qashqai.jpg" alt="">
 							</div>
 
 							<div class="product-preview">
-								<img src="./img/gtr2.jpg" alt="">
+								<img src="./img/qashqai2.jpg" alt="">
 							</div>
 
 							<div class="product-preview">
-								<img src="./img/gtr3.jpg" alt="">
+								<img src="./img/qashqai3.jpg" alt="">
 							</div>
 
 							<div class="product-preview">
-								<img src="./img/gtr4.jpg" alt="">
+								<img src="./img/qashqai4.jpg" alt="">
 							</div>
 						</div>
 					</div>
@@ -211,7 +246,7 @@
 					<!-- Product details -->
 					<div class="col-md-5">
 						<div class="product-details">
-							<h2 class="product-name">Nissan GTR</h2>
+							<h2 class="product-name">Nissan Qashqai</h2>
 							<div>
 								<div class="product-rating">
 									<i class="fa fa-star"></i>
@@ -223,10 +258,10 @@
 								<a class="review-link" href="#redireccion">Add your review</a>
 							</div>
 							<div>
-								<h3 class="product-price">108.050€ <del class="product-old-price">120.000€</del></h3>
+								<h3 class="product-price">20.000€ </h3>
 								<span class="product-available">In Stock</span>
 							</div>
-							<p>El Nissan GT-R es un coupé deportivo de altas prestaciones que rivaliza con las versiones más deportivas del Porsche 911 así como, por prestaciones, con deportivos de mayor precio como el Audi R8 . La principal virtud del deportivo de Nissan es ofrecernos una gran capacidad como deportivo a un precio comedido en comparación con otros de sus rivales. </p>
+							<p>La belleza puede ser INTELIGENTE. El diseño elegante y sofisticado del crossover urbano definitivo lo demuestra. El Nissan QASHQAI combina una impresionante y atractiva imagen con una nueva aerodinámica altamente eficiente para que disfrutes al máximo de la conducción y domines la ciudad. </p>
 
 							<div class="product-options">
 								<label>
@@ -242,8 +277,9 @@
 								<label>
 									Color
 									<select class="input-select">
-										<option value="0">Blanco</option>
-										<option value="1">Naranja</option>
+                                        <option value="0">Rojo</option>
+										<option value="1">Blanco</option>
+                                        <option value="2">Azul</option>
 									</select>
 								</label>
 							</div>
@@ -257,7 +293,7 @@
 
 							<ul class="product-links">
 								<li>Category:</li>
-								<li><a href="deportivos.html">Deportivos</a></li>
+								<li><a href="clasicos.php">SUV</a></li>
 								
 							</ul>
 
@@ -290,12 +326,13 @@
 								<div id="tab1" class="tab-pane fade in active">
 									<div class="row">
 										<div class="col-md-12">
-											<p>El Nissan GT-R es un coupé deportivo de altas prestaciones que rivaliza con las versiones más deportivas del Porsche 911 así como, por prestaciones, con deportivos de mayor precio como el Audi R8 . La principal virtud del deportivo de Nissan es ofrecernos una gran capacidad como deportivo a un precio comedido en comparación con otros de sus rivales.<br><br>
+											<p>Con una potente renovación de estilo e incorporando aspectos novedosos como la parrilla frontal, el diseño del capó o los lujosos asientos, el Crossover de Nissan luce mejor cara y espíritu que nunca. También puedes personalizar tu Nissan QASHQAI con los accesorios exclusivos. <br><br>
 
-												La actual generación (R35) del GT-R se presentó al público en 2007 por primera vez con 485 caballos. Desde entonces prácticamente cada año Nissan lo ha ido evolucionando mejorando su dinámica, dándole más potencia, introduciendo pequeños detalles estéticos o mejorando su habitáculo además de introducir versiones especiales como el Nissan GT-R Nismo o el Nissan GT-R Track Edition. <br><br>
-												El GT-R siempre se ha caracterizado por un aspecto externo muy agresivo y musculoso, que se ha ido refinando con el paso del tiempo. El resultado es un deportivo muy voluminoso, de gran tamaño, y con formas muy marcadas.<br><br>
+                                            Los sistemas de conducción inteligente de Nissan transforman la manera en que interactúas con tu Nissan QASHQAI, favoreciendo la plena compenetración con él para una conducción más confiada y segura. <br><br>
 
-												El todopoderoso Nissan siempre ha tenido en su habitáculo uno de sus puntos débiles. Con su última actualización ha ganado en calidad y equipamiento, y ahora puede competir a casi la misma altura que sus rivales premium. </p>
+                                            Convierte cada trayecto en una experiencia única con la conectividad inteligente de Nissan y el sonido expansivo del sistema de audio Bose® Premium.<br><br>
+
+                                     </p>
 										</div>
 									</div>
 								</div>
@@ -306,13 +343,13 @@
 									<div class="row">
 										<div class="col-md-12">
 												<div class="product-rating">
-											<p>Carrocería: Coupé <br>
-												Puertas: 2 <br>
-												Plazas: 2-4 <br>
-												Maletero: 315 L <br>
-												Potencia: 570-600 CV <br>
-												Consumo: 11,8 L/100km <br>
-												Precio: 108.050€ <br>
+											<p>Carrocería: SUV <br>
+												Puertas: 4 <br>
+												Plazas: 5 <br>
+												Maletero: 500 L <br>
+												Potencia: 110-163 CV <br>
+												Consumo: 5l/100km <br>
+												Precio: 20.000 € <br>
 												 
 														Valoracion:
 														<i class="fa fa-star"></i>
@@ -538,7 +575,7 @@
 							</div>
 							<div class="product-body">
 								<p class="product-category">Deportivos</p>
-								<h3 class="product-name"><a href="audir8.html">Audi R8</a></h3>
+								<h3 class="product-name"><a href="audir8.php">Audi R8</a></h3>
 								<h4 class="product-price">260.085€ <del class="product-old-price">280.500€</del></h4>
 								<div class="product-rating">
 										<i class="fa fa-star"></i>
@@ -558,32 +595,28 @@
 					<!-- /product -->
 
 					<!-- product -->
-					<div class="col-md-3 col-xs-6">
-						<div class="product">
-							<div class="product-img">
-								<img src="./img/mustang1.jpg" alt="">
-								<div class="product-label">
-									<span class="new">NEW</span>
-								</div>
-							</div>
-							<div class="product-body">
-								<p class="product-category">Deportivos</p>
-								<h3 class="product-name"><a href="mustang.html">Ford Mustang 2018</a></h3>
-								<h4 class="product-price">980.00€ <del class="product-old-price">990.00€</del></h4>
-								<div class="product-rating">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-								</div>
-								
-							</div>
-							<div class="add-to-cart">
-								<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Add to cart</button>
-							</div>
-						</div>
-					</div>
+                    <div class="col-md-3 col-xs-6">
+                            <div class="product">
+                                <div class="product-img">
+                                    <img src="./img/gtr1.jpg" alt="">
+                                </div>
+                                <div class="product-body">
+                                    <p class="product-category">Deportivos</p>
+                                    <h3 class="product-name"><a href="product.php">Nissan GTR</a></h3>
+                                    <h4 class="product-price">108.050€</h4>
+                                    <div class="product-rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-o"></i>
+                                    </div>
+                                </div>
+                                <div class="add-to-cart">
+                                    <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
 					<!-- /product -->
 
 					<div class="clearfix visible-sm visible-xs"></div>
@@ -596,7 +629,7 @@
 							</div>
 							<div class="product-body">
 								<p class="product-category">Deportivos</p>
-								<h3 class="product-name"><a href="bmwM8.html">BMW M3</a></h3>
+								<h3 class="product-name"><a href="bmwM8.php">BMW M3</a></h3>
 								<h4 class="product-price">86.000€<del class="product-old-price">92.000€</del></h4>
 								<div class="product-rating">
 									<i class="fa fa-star"></i>
@@ -621,7 +654,7 @@
 							</div>
 							<div class="product-body">
 								<p class="product-category">Deportivos</p>
-								<h3 class="product-name"><a href="lambo.html">Lamborghini Sesto Elemento</a></h3>
+								<h3 class="product-name"><a href="lambo.php">Lamborghini Sesto Elemento</a></h3>
 								<h4 class="product-price">450.000€ <del class="product-old-price">502.000€</del></h4>
 								<div class="product-rating">
 									<i class="fa fa-star"></i>
@@ -705,9 +738,9 @@
 							<div class="footer">
 								<h3 class="footer-title">Categories</h3>
 								<ul class="footer-links">
-									<li><a href="deportivos.html">Deportivos</a></li>
-									<li><a href="clasicos.html">Clasicos</a></li>
-									<li><a href="#">4X4</a></li>
+									<li><a href="deportivos.php">Deportivos</a></li>
+									<li><a href="clasicos.php">Clasicos</a></li>
+									<li><a href="SUV.php">4X4</a></li>
 								</ul>
 							</div>
 						</div>
