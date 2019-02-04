@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php session_start(); ?>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -46,9 +47,50 @@
 						<li><a href="#"><i class="fa fa-envelope-o"></i> Casr&Cosas@yahoo.net</a></li>
 						<li><a href="#"><i class="fa fa-map-marker"></i> 1734 Stonecoal Road</a></li>
 					</ul>
+					
+					<?php
+					if (isset($_SESSION['user_id'])){
+						if (37==($_SESSION['user_id'])){
+				   ?>
 					<ul class="header-links pull-right">
-						<li><a href="Login/index.html"><i class="fa fa-user-o"></i> My Account</a></li>
+						<li><a href="añadir_registros.php"><i class="fa fa-book"></i></a></li>
+						<li><a href="Login/logout.php"><i class="fa fa-user-o"></i> Log Out</a></li>
 					</ul>
+					<?php
+				}
+			  }
+				  ?>
+
+				<?php
+					if (isset($_SESSION['user_id'])){
+						if (37!=($_SESSION['user_id'])){
+				   ?>
+
+					<ul class="header-links pull-right">
+						<li><a href="Login/logout.php"><i class="fa fa-user-o"></i> Log Out</a></li>
+					</ul>
+					
+				<?php
+				}
+			  }
+				  ?>
+
+				  <?php
+
+					if (!isset($_SESSION['user_id'])){
+						?>
+
+						<ul class="header-links pull-right">
+						<li><a href="Login/login.php"><i class="fa fa-user-o"></i> Log In</a></li>
+						
+					</ul>
+				
+
+		
+
+<?php
+}
+?>
 				</div>
 			</div>
 			<!-- /TOP HEADER -->
@@ -62,7 +104,7 @@
 						<!-- LOGO -->
 						<div class="col-md-3">
 							<div class="header-logo">
-								<a href="index.html" class="logo">
+								<a href="index.php" class="logo">
 									<img src="./img/logo.png" alt="">
 								</a>
 							</div>
@@ -223,7 +265,7 @@
 								<a class="review-link" href="#redireccion">Add your review</a>
 							</div>
 							<div>
-								<h3 class="product-price">980.000€ <del class="product-old-price">990.000€</del></h3>
+								<h3 class="product-price">80.000€</h3>
 								<span class="product-available">In Stock</span>
 							</div>
 							<p>El BMW M3 es la versión deportiva del BMW Serie 3, producido por el fabricante de automóviles bávaro BMW.
@@ -546,7 +588,7 @@
 							</div>
 							<div class="product-body">
 								<p class="product-category">Deportivos</p>
-								<h3 class="product-name"><a href="audir8.html">Audi R8</a></h3>
+								<h3 class="product-name"><a href="audir8.php">Audi R8</a></h3>
 								<h4 class="product-price">260.085€ <del class="product-old-price">280.500€</del></h4>
 								<div class="product-rating">
 										<i class="fa fa-star"></i>
@@ -576,8 +618,8 @@
 							</div>
 							<div class="product-body">
 								<p class="product-category">Deportivos</p>
-								<h3 class="product-name"><a href="mustang.html">Ford Mustang 2018</a></h3>
-								<h4 class="product-price">980.00€ <del class="product-old-price">990.00€</del></h4>
+								<h3 class="product-name"><a href="mustang.php">Ford Mustang 2018</a></h3>
+								<h4 class="product-price">49.501 € <del class="product-old-price">59.877 €</del></h4>
 								<div class="product-rating">
 									<i class="fa fa-star"></i>
 									<i class="fa fa-star"></i>
@@ -629,8 +671,8 @@
 							</div>
 							<div class="product-body">
 								<p class="product-category">Deportivos</p>
-								<h3 class="product-name"><a href="lambo.html">Lamborghini Sesto Elemento</a></h3>
-								<h4 class="product-price">450.000€ <del class="product-old-price">502.000€</del></h4>
+								<h3 class="product-name"><a href="lambo.php">Lamborghini Sesto Elemento</a></h3>
+								<h4 class="product-price">2.550.000€ <del class="product-old-price">2.650.000€</del></h4>
 								<div class="product-rating">
 									<i class="fa fa-star"></i>
 									<i class="fa fa-star"></i>

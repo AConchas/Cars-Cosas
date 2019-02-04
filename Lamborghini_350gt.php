@@ -53,6 +53,7 @@
 						if (37==($_SESSION['user_id'])){
 				   ?>
 					<ul class="header-links pull-right">
+						<li><a href="añadir_registros.php"><i class="fa fa-book"></i></a></li>
 						<li><a href="Login/logout.php"><i class="fa fa-user-o"></i> Log Out</a></li>
 					</ul>
 					<?php
@@ -263,7 +264,7 @@
 							</div>
 							<p>El Lamborghini 350 GT es un automóvil deportivo, fue el primer modelo producido por Lamborghini, basado en el prototipo 350 GTV, en primer lugar se mostró en el Salón del Automóvil de Ginebra en 1964.
 
-El nombre del 350 GT deriva de su motor, que es un V12 de 3,5 litros con levas cuádruples. El 350 GT tiene suspensión trasera independiente, mientras que Ferrari y muchos otros fabricantes aún utilizaban ejes traseros. </p>
+                            El nombre del 350 GT deriva de su motor, que es un V12 de 3,5 litros con levas cuádruples. El 350 GT tiene suspensión trasera independiente, mientras que Ferrari y muchos otros fabricantes aún utilizaban ejes traseros. </p>
 
 							<div class="product-options">
 								<label>
@@ -347,10 +348,9 @@ El nombre del 350 GT deriva de su motor, que es un V12 de 3,5 litros con levas c
 												<div class="product-rating">
 											<p>Carrocería: Coupé <br>
 												Puertas: 2 <br>
-												Plazas: 4 <br>
+												Plazas: 2 <br>
 												Maletero: 315 L <br>
-												Potencia: 290-450 CV <br>
-												Consumo: 8,7 – 12,1 l/100km <br>
+												Potencia: 280 CV <br>
 												Precio: 49.501 € <br>
 												 
 														Valoracion:
@@ -358,7 +358,7 @@ El nombre del 350 GT deriva de su motor, que es un V12 de 3,5 litros con levas c
 														<i class="fa fa-star"></i>
 														<i class="fa fa-star"></i>
 														<i class="fa fa-star"></i>
-														<i class="fa fa-star-o"></i>
+														<i class="fa fa-star"></i>
 													</div></p>
 										</div>
 									</div>

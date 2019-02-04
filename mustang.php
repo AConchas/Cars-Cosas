@@ -53,6 +53,7 @@
 						if (37==($_SESSION['user_id'])){
 				   ?>
 					<ul class="header-links pull-right">
+						<li><a href="añadir_registros.php"><i class="fa fa-book"></i></a></li>
 						<li><a href="Login/logout.php"><i class="fa fa-user-o"></i> Log Out</a></li>
 					</ul>
 					<?php
@@ -651,7 +652,7 @@
 							<div class="product-body">
 								<p class="product-category">Deportivos</p>
 								<h3 class="product-name"><a href="lambo.php">Lamborghini Sesto Elemento</a></h3>
-								<h4 class="product-price">450.000€ <del class="product-old-price">502.000€</del></h4>
+								<h4 class="product-price">2.550.000€ <del class="product-old-price">2.650.000€</del></h4>
 								<div class="product-rating">
 									<i class="fa fa-star"></i>
 									<i class="fa fa-star"></i>

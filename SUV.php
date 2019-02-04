@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php session_start(); ?>
 <html lang="en">
 
 <head>
@@ -48,9 +49,49 @@
 					<li><a href="#"><i class="fa fa-envelope-o"></i> Casr&Cosas@yahoo.net</a></li>
 					<li><a href="#"><i class="fa fa-map-marker"></i> 1734 Stonecoal Road</a></li>
 				</ul>
-				<ul class="header-links pull-right">
-					<li><a href="Login/index.html"><i class="fa fa-user-o"></i> My Account</a></li>
-				</ul>
+				<?php
+					if (isset($_SESSION['user_id'])){
+						if (37==($_SESSION['user_id'])){
+				   ?>
+					<ul class="header-links pull-right">
+						<li><a href="añadir_registros.php"><i class="fa fa-book"></i></a></li>
+						<li><a href="Login/logout.php"><i class="fa fa-user-o"></i> Log Out</a></li>
+					</ul>
+					<?php
+				}
+			  }
+				  ?>
+
+				<?php
+					if (isset($_SESSION['user_id'])){
+						if (37!=($_SESSION['user_id'])){
+				   ?>
+
+					<ul class="header-links pull-right">
+						<li><a href="Login/logout.php"><i class="fa fa-user-o"></i> Log Out</a></li>
+					</ul>
+					
+				<?php
+				}
+			  }
+				  ?>
+
+				  <?php
+
+					if (!isset($_SESSION['user_id'])){
+						?>
+
+						<ul class="header-links pull-right">
+						<li><a href="Login/login.php"><i class="fa fa-user-o"></i> Log In</a></li>
+						
+					</ul>
+				
+
+		
+
+<?php
+}
+?>
 			</div>
 		</div>
 		<!-- /TOP HEADER -->
