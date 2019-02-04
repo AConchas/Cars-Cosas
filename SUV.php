@@ -287,31 +287,31 @@
 								<img src="./img/gtr1.jpg" alt="">
 							</div>
 							<div class="product-body">
-								<p class="product-category">Category</p>
-								<h3 class="product-name"><a href="product.html">Nissan GTR</a></h3>
-								<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+								<p class="product-category">Deportivos</p>
+								<h3 class="product-name"><a href="product.php">Nissan GTR</a></h3>
+								<h4 class="product-price">108.050€ </h4>
 							</div>
 						</div>
 
 						<div class="product-widget">
 							<div class="product-img">
-								<img src="./img/r8.jpg" alt="">
+								<img src="./img/r81.jpg" alt="">
 							</div>
 							<div class="product-body">
-								<p class="product-category">Category</p>
-								<h3 class="product-name"><a href="audir8.html">Audi R8</a></h3>
-								<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+								<p class="product-category">Deportivos</p>
+								<h3 class="product-name"><a href="audir8.php">Audi R8</a></h3>
+								<h4 class="product-price">260.085€ </h4>
 							</div>
 						</div>
 
 						<div class="product-widget">
 							<div class="product-img">
-								<img src="./img/bmw.jpg" alt="">
+								<img src="./img/bmw2.jpg" alt="">
 							</div>
 							<div class="product-body">
-								<p class="product-category">Category</p>
-								<h3 class="product-name"><a href="bmwM8.html">BMW M3</a></h3>
-								<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+								<p class="product-category">Deportivos</p>
+								<h3 class="product-name"><a href="bmwM8.php">BMW M3</a></h3>
+								<h4 class="product-price">80.000€</h4>
 							</div>
 						</div>
 					</div>
@@ -348,7 +348,7 @@
 									<p class="product-category">4x4</p>
 
 									<h3 class="product-name"><a href="Nissan_Qasqhai.php">Nissan Qashqi</a></h3>
-									<h4 class="product-price">$108.050 </h4>
+									<h4 class="product-price">20.000€ </h4>
 									<div class="product-rating">
 										<i class="fa fa-star"></i>
 										<i class="fa fa-star"></i>
@@ -381,7 +381,7 @@
 								<div class="product-body">
 									<p class="product-category">4x4</p>
 									<h3 class="product-name"><a href="Mercedes_EQC.php">Mercedes EQC</a></h3>
-									<h4 class="product-price">$260.085 <del class="product-old-price">$990.00</del></h4>
+									<h4 class="product-price">79.000€ <del class="product-old-price">85.000€</del></h4>
 									<div class="product-rating">
 										<i class="fa fa-star"></i>
 										<i class="fa fa-star"></i>
@@ -409,7 +409,7 @@
 								<div class="product-body">
 									<p class="product-category">4x4</p>
 									<h3 class="product-name"><a href="BMW_X7.php">BMW X7</a></h3>
-									<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+									<h4 class="product-price">76.000€ <del class="product-old-price">83.000€</del></h4>
 									<div class="product-rating">
 										<i class="fa fa-star"></i>
 										<i class="fa fa-star"></i>
@@ -439,7 +439,7 @@
 								<div class="product-body">
 									<p class="product-category">4x4</p>
 									<h3 class="product-name"><a href="Audi_SQ7.php">Audi SQ7</a></h3>
-									<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+									<h4 class="product-price">109.000€ <del class="product-old-price">113.130€</del></h4>
 									<div class="product-rating">
 										<i class="fa fa-star"></i>
 										<i class="fa fa-star"></i>
@@ -471,7 +471,7 @@
 								<div class="product-body">
 									<p class="product-category">4x4</p>
 									<h3 class="product-name"><a href="Mercedes_6x6.php">Mercedes G63 AMG</a></h3>
-									<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+									<h4 class="product-price">610.000€ <del class="product-old-price">625.500€</del></h4>
 									<div class="product-rating">
 										<i class="fa fa-star"></i>
 										<i class="fa fa-star"></i>
@@ -571,9 +571,9 @@
 						<div class="footer">
 							<h3 class="footer-title">Categories</h3>
 							<ul class="footer-links">
-								<li><a href="deportivos.html">Deportivos</a></li>
-								<li><a href="clasicos.html">Clasicos</a></li>
-								<li><a href="#">4X4</a></li>
+								<li><a href="deportivos.php">Deportivos</a></li>
+								<li><a href="clasicos.php">Clasicos</a></li>
+								<li><a href="SUV.php">4X4</a></li>
 							</ul>
 						</div>
 					</div>

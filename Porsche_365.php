@@ -53,6 +53,7 @@
 						if (37==($_SESSION['user_id'])){
 				   ?>
 					<ul class="header-links pull-right">
+						<li><a href="añadir_registros.php"><i class="fa fa-book"></i></a></li>
 						<li><a href="Login/logout.php"><i class="fa fa-user-o"></i> Log Out</a></li>
 					</ul>
 					<?php
@@ -203,19 +204,19 @@
 					<div class="col-md-5 col-md-push-2">
 						<div id="product-main-img">
 							<div class="product-preview">
-								<img src="./img/merceSUV.jpg" alt="">
+								<img src="./img/porsche 356.jpg" alt="">
 							</div>
 
 							<div class="product-preview">
-								<img src="./img/merceSUV2.jpg" alt="">
+								<img src="./img/porsche356a.jpg" alt="">
 							</div>
 
 							<div class="product-preview">
-								<img src="./img/merceSUV3.jpg" alt="">
+								<img src="./img/porsche356b.jpg" alt="">
 							</div>
 
 							<div class="product-preview">
-								<img src="./img/merceSUV4.jpg" alt="">
+								<img src="./img/porsche356c.jpg" alt="">
 							</div>
 						</div>
 					</div>
@@ -225,19 +226,19 @@
 					<div class="col-md-2  col-md-pull-5">
 						<div id="product-imgs">
 							<div class="product-preview">
-								<img src="./img/merceSUV.jpg" alt="">
+								<img src="./img/porsche 356.jpg" alt="">
 							</div>
 
 							<div class="product-preview">
-								<img src="./img/merceSUV2.jpg" alt="">
+								<img src="./img/porsche356a.jpg" alt="">
 							</div>
 
 							<div class="product-preview">
-								<img src="./img/merceSUV3.jpg" alt="">
+								<img src="./img/porsche356b.jpg" alt="">
 							</div>
 
 							<div class="product-preview">
-								<img src="./img/merceSUV4.jpg" alt="">
+								<img src="./img/porsche356c.jpg" alt="">
 							</div>
 						</div>
 					</div>
@@ -246,7 +247,7 @@
 					<!-- Product details -->
 					<div class="col-md-5">
 						<div class="product-details">
-							<h2 class="product-name">Mercedes EQC</h2>
+							<h2 class="product-name">Porsche 365</h2>
 							<div>
 								<div class="product-rating">
 									<i class="fa fa-star"></i>
@@ -258,10 +259,10 @@
 								<a class="review-link" href="#redireccion">Add your review</a>
 							</div>
 							<div>
-								<h3 class="product-price">85.000€ </h3>
+								<h3 class="product-price">112.000€ </h3>
 								<span class="product-available">In Stock</span>
 							</div>
-							<p>Es como si volviéramos a nuestras raíces. Al punto donde nos encontrábamos hace más de 130 años, cuando inventamos el automóvil. Cuando éramos conscientes de ser artífices y testigos de algo realmente sensacional. </p>
+							<p>El Porsche 365 fue un automóvil deportivo producido por la marca alemana Porsche entre 1948 y 1965. Fue el primer automóvil de serie fabricado por Porsche, era un auto de cuatro plazas con motor trasero montado sobre un chasis derivado del Volkswagen. </p>
 
 							<div class="product-options">
 								<label>
@@ -293,7 +294,7 @@
 
 							<ul class="product-links">
 								<li>Category:</li>
-								<li><a href="clasicos.php">SUV</a></li>
+								<li><a href="clasicos.php">Clasicos</a></li>
 								
 							</ul>
 
@@ -326,16 +327,14 @@
 								<div id="tab1" class="tab-pane fade in active">
 									<div class="row">
 										<div class="col-md-12">
-											<p>La mejor infraestructura de carga es la que mejor se adapta a sus necesidades individuales. Por esta razón, Mercedes-Benz le ofrece máxima flexibilidad. ¿Quiere cargar el vehículo rápida y cómodamente sin salir de casa, mediante el Wallbox? ¿O está de viaje y tiene que recargarlo en estaciones de carga públicas? ¿Quiere ser libre para cargar su EQC en cualquier lugar, conectándolo a una caja de enchufe doméstica? Hacemos posibles todas estas opciones para que usted disfrute de un máximo confort de carga. <br><br>
+											<p>El diseñador del Volkswagen Tipo 1, Ferdinand Porsche, posiblemente le dio al mundo el coche para las masas pero fue su hijo Ferry junto a Karl Rabe y Erwin Komenda que comenzaron en 1947 el estudio de un deportivo biplaza sobre el Volkswagen, el proyecto nº365 que se convertiría en el primer Porsche 365, el primero de la historia de la marca.<br><br>
 
-                                            El Mercedes-Benz Wallbox de uso doméstico le permite cargar completamente el EQC mientras usted descansa en el sofá. <br><br>
+                                            Por conveniencia, después de la Segunda Guerra Mundial forzó una dependencia en la plataforma del Beetle, pero el 365 es mucho más que un escarabajo en vestimenta de mariposa.
+                                            <br><br>
 
-                                            
+                                            La configuración del motor trasero podrá proceder del coche del viejo, pero del hijo atleta los genes son transformados en un auténtico deportivo. Un descarado, ágil, y feliz bailarín de cola, el bonito 365 es la fundación de una orgullosa tradición deportiva.<br><br>
 
-En realidad, la inteligencia artificial de MBUX es algo muy humano, pues este sistema se hace cargo de forma intuitiva de los deseos y las preferencias del conductor. El sistema se familiariza progresivamente con el usuario, trayecto tras trayecto, hasta ser capaz de ajustar a su gusto la emisora de radio, la ruta de navegación o la temperatura, entre otros.
-<br><br>
-
-                                     </p>
+                                            En 2010 se planeaba volver a fabricarlo como deportivo tipo «speedster» asequible por debajo del Boxster y con un precio de menos de 35.000€ (47.200 USD) y servir de rival para el futuro VW Bluesport, Seat Salsa, Audi R2 y BMW Z2. </p>
 										</div>
 									</div>
 								</div>
@@ -346,20 +345,19 @@ En realidad, la inteligencia artificial de MBUX es algo muy humano, pues este si
 									<div class="row">
 										<div class="col-md-12">
 												<div class="product-rating">
-											<p>Carrocería: SUV <br>
-												Puertas: 4 <br>
-												Plazas: 5 <br>
-												Maletero: 500 L <br>
-												Potencia: 300 kW (402 CV) <br>
-												Consumo: 1kWh/100 km <br>
-												Precio: 85.000 € <br>
+											<p>Carrocería: Coupé <br>
+												Puertas: 2 <br>
+												Plazas: 4 <br>
+												Maletero: 50 L <br>
+												Potencia: 40 CV <br>
+												Precio: 112.000 € <br>
 												 
 														Valoracion:
 														<i class="fa fa-star"></i>
 														<i class="fa fa-star"></i>
 														<i class="fa fa-star"></i>
 														<i class="fa fa-star"></i>
-														<i class="fa fa-star-o"></i>
+														<i class="fa fa-star"></i>
 													</div></p>
 										</div>
 									</div>

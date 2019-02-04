@@ -284,7 +284,7 @@
 								<img src="./img/gtr1.jpg" alt="">
 							</div>
 							<div class="product-body">
-								<p class="product-category">Category</p>
+								<p class="product-category">Deportivos</p>
 								<h3 class="product-name"><a href="product.php">Nissan GTR</a></h3>
 								<h4 class="product-price">108.050€ </h4>
 							</div>
@@ -295,9 +295,9 @@
 								<img src="./img/r81.jpg" alt="">
 							</div>
 							<div class="product-body">
-								<p class="product-category">Category</p>
+								<p class="product-category">Deportivos</p>
 								<h3 class="product-name"><a href="audir8.php">Audi R8</a></h3>
-								<h4 class="product-price">280.085€ </h4>
+								<h4 class="product-price">260.085€ </h4>
 							</div>
 						</div>
 
@@ -306,9 +306,9 @@
 								<img src="./img/bmw2.jpg" alt="">
 							</div>
 							<div class="product-body">
-								<p class="product-category">Category</p>
+								<p class="product-category">Deportivos</p>
 								<h3 class="product-name"><a href="bmwM8.php">BMW M3</a></h3>
-								<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+								<h4 class="product-price">80.000€</h4>
 							</div>
 						</div>
 					</div>
@@ -372,8 +372,8 @@
 								</div>
 								<div class="product-body">
 									<p class="product-category">Clasicos</p>
-									<h3 class="product-name"><a href="audir8.html">Mercedes 280 SE</a></h3>
-									<h4 class="product-price">$260.085 <del class="product-old-price">$990.00</del></h4>
+									<h3 class="product-name"><a href="Mercedes_280_SE.php">Mercedes 280 SE</a></h3>
+									<h4 class="product-price">60.000€ <del class="product-old-price">64.000€</del></h4>
 									<div class="product-rating">
 										<i class="fa fa-star"></i>
 										<i class="fa fa-star"></i>
@@ -400,8 +400,8 @@
 								</div>
 								<div class="product-body">
 									<p class="product-category">Clasicos</p>
-									<h3 class="product-name"><a href="bmwM8.html">Porsche 365</a></h3>
-									<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+									<h3 class="product-name"><a href="Porsche_365.php">Porsche 365</a></h3>
+									<h4 class="product-price">112.000€ <del class="product-old-price">120.000€</del></h4>
 									<div class="product-rating">
 										<i class="fa fa-star"></i>
 										<i class="fa fa-star"></i>
@@ -430,7 +430,7 @@
 								</div>
 								<div class="product-body">
 									<p class="product-category">Clasicos</p>
-									<h3 class="product-name"><a href="mustang.html">Ferrari 400GT</a></h3>
+									<h3 class="product-name"><a href="ferrari400.php">Ferrari 400GT</a></h3>
 									<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
 									<div class="product-rating">
 										<i class="fa fa-star"></i>

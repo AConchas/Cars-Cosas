@@ -53,6 +53,7 @@
 						if (37==($_SESSION['user_id'])){
 				   ?>
 					<ul class="header-links pull-right">
+						<li><a href="añadir_registros.php"><i class="fa fa-book"></i></a></li>
 						<li><a href="Login/logout.php"><i class="fa fa-user-o"></i> Log Out</a></li>
 					</ul>
 					<?php
@@ -203,19 +204,19 @@
 					<div class="col-md-5 col-md-push-2">
 						<div id="product-main-img">
 							<div class="product-preview">
-								<img src="./img/merceSUV.jpg" alt="">
+								<img src="./img/mercedes.jpg" alt="">
 							</div>
 
 							<div class="product-preview">
-								<img src="./img/merceSUV2.jpg" alt="">
+								<img src="./img/mercedes1.jpg" alt="">
 							</div>
 
 							<div class="product-preview">
-								<img src="./img/merceSUV3.jpg" alt="">
+								<img src="./img/mercedes2.jpg" alt="">
 							</div>
 
 							<div class="product-preview">
-								<img src="./img/merceSUV4.jpg" alt="">
+								<img src="./img/mercedes3.jpg" alt="">
 							</div>
 						</div>
 					</div>
@@ -225,19 +226,19 @@
 					<div class="col-md-2  col-md-pull-5">
 						<div id="product-imgs">
 							<div class="product-preview">
-								<img src="./img/merceSUV.jpg" alt="">
+								<img src="./img/mercedes.jpg" alt="">
 							</div>
 
 							<div class="product-preview">
-								<img src="./img/merceSUV2.jpg" alt="">
+								<img src="./img/mercedes1.jpg" alt="">
 							</div>
 
 							<div class="product-preview">
-								<img src="./img/merceSUV3.jpg" alt="">
+								<img src="./img/mercedes2.jpg" alt="">
 							</div>
 
 							<div class="product-preview">
-								<img src="./img/merceSUV4.jpg" alt="">
+								<img src="./img/mercedes3.jpg" alt="">
 							</div>
 						</div>
 					</div>
@@ -246,7 +247,7 @@
 					<!-- Product details -->
 					<div class="col-md-5">
 						<div class="product-details">
-							<h2 class="product-name">Mercedes EQC</h2>
+							<h2 class="product-name">Mercedes 280 SE</h2>
 							<div>
 								<div class="product-rating">
 									<i class="fa fa-star"></i>
@@ -258,10 +259,10 @@
 								<a class="review-link" href="#redireccion">Add your review</a>
 							</div>
 							<div>
-								<h3 class="product-price">85.000€ </h3>
+								<h3 class="product-price">60.000€ </h3>
 								<span class="product-available">In Stock</span>
 							</div>
-							<p>Es como si volviéramos a nuestras raíces. Al punto donde nos encontrábamos hace más de 130 años, cuando inventamos el automóvil. Cuando éramos conscientes de ser artífices y testigos de algo realmente sensacional. </p>
+							<p>Los fundadores de la “Daimler-Benz AG” fueron Gottlieb Daimler y Karl Benz, quienes desarrollaron, por separado, los primeros coches motorizados utilizables: Daimler, en colaboración de Wilhelm Maybach, patentó en 1885, un motor rápido horizontal, capaz de ser utilizado en un vehículo autopropulsado. </p>
 
 							<div class="product-options">
 								<label>
@@ -293,7 +294,7 @@
 
 							<ul class="product-links">
 								<li>Category:</li>
-								<li><a href="clasicos.php">SUV</a></li>
+								<li><a href="clasicos.php">Clasicos</a></li>
 								
 							</ul>
 
@@ -326,16 +327,14 @@
 								<div id="tab1" class="tab-pane fade in active">
 									<div class="row">
 										<div class="col-md-12">
-											<p>La mejor infraestructura de carga es la que mejor se adapta a sus necesidades individuales. Por esta razón, Mercedes-Benz le ofrece máxima flexibilidad. ¿Quiere cargar el vehículo rápida y cómodamente sin salir de casa, mediante el Wallbox? ¿O está de viaje y tiene que recargarlo en estaciones de carga públicas? ¿Quiere ser libre para cargar su EQC en cualquier lugar, conectándolo a una caja de enchufe doméstica? Hacemos posibles todas estas opciones para que usted disfrute de un máximo confort de carga. <br><br>
+											<p>Paralelamente Benz trabajaba en el desarrollo de un motor de cuatro tiempos, alimentado con gas. En 1886 obtuvo la patente para un vehículo con motor de gas, tras lo cual, en 1890 constituyó la “Benz und Cíe., Rheinische Gasmotoren-Fabrik” para fabricar motores y vehículos con su motor.<br><br>
 
-                                            El Mercedes-Benz Wallbox de uso doméstico le permite cargar completamente el EQC mientras usted descansa en el sofá. <br><br>
+                                            Las carrocerías podían ser de dos longitudes, corta (S) y con la batalla alargada en 14 cms. (SEL) para ofrecer a  los pasajeros de las plazas traseras un espacio extra para las piernas y un acceso mejorado.
+                                            <br><br>
 
-                                            
+                                            La carrocería se diseñó de acuerdo con los nuevos avances en temas de seguridad pasiva: la célula de seguridad para los pasajeros podía resistir impactos de hasta 55 km/h sin deformaciones estructurales.<br><br>
 
-En realidad, la inteligencia artificial de MBUX es algo muy humano, pues este sistema se hace cargo de forma intuitiva de los deseos y las preferencias del conductor. El sistema se familiariza progresivamente con el usuario, trayecto tras trayecto, hasta ser capaz de ajustar a su gusto la emisora de radio, la ruta de navegación o la temperatura, entre otros.
-<br><br>
-
-                                     </p>
+                                            En cuanto a los motores V8 el 3.8 litros dejaba paso a un nuevo 4.2 litros, y el potente 5.0 litros fue potenciado para ofrecer 245 caballos vapor. </p>
 										</div>
 									</div>
 								</div>
@@ -346,20 +345,19 @@ En realidad, la inteligencia artificial de MBUX es algo muy humano, pues este si
 									<div class="row">
 										<div class="col-md-12">
 												<div class="product-rating">
-											<p>Carrocería: SUV <br>
-												Puertas: 4 <br>
-												Plazas: 5 <br>
-												Maletero: 500 L <br>
-												Potencia: 300 kW (402 CV) <br>
-												Consumo: 1kWh/100 km <br>
-												Precio: 85.000 € <br>
+											<p>Carrocería: Coupé <br>
+												Puertas: 2 <br>
+												Plazas: 2 <br>
+												Maletero: 200 L <br>
+												Potencia: 245 CV <br>
+												Precio: 60.000 € <br>
 												 
 														Valoracion:
 														<i class="fa fa-star"></i>
 														<i class="fa fa-star"></i>
 														<i class="fa fa-star"></i>
 														<i class="fa fa-star"></i>
-														<i class="fa fa-star-o"></i>
+														<i class="fa fa-star"></i>
 													</div></p>
 										</div>
 									</div>
