@@ -204,7 +204,7 @@
 		<section class="page-section about-heading">
 
               <form action="Erregistroak/gehitu.php" method="post">
-<br>
+<br><br>
                 <h1 align="center" id="titulo"> Kotxeak Gehitu </h1>
                 <br><br>
                 <div align="center">
@@ -232,14 +232,57 @@
                 </div>
 
         </form>
+
         <br><br>
         <p align="center">------------------------------------------------------------------------------------</p>
         <br><br>
-        <h1 align="center"> Usuarioak </h1>
+
+        <h1 align="center"> Kotxeak </h1>
             <br><br>
 
             <?php
                 include("Login/Konexioa.php");
+                $link=ConnectDataBase();
+
+              $result=mysqli_query($link,"select * from coches");
+
+            ?>
+            <table align = "center" class="table table-hover" id="table">
+              <tr id="menu">
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Tipo</th>
+                <th>Precio</th>
+                <th></th>
+              </tr>
+
+              <?php
+                while($row = mysqli_fetch_array($result))
+                {
+                  printf("
+                      <tr>
+                        <td>%s</td>
+                        <td>%s</td>
+                        <td>%s</td>
+                        <td>%s</td>
+                        <td><a href =\"Erregistroak/kotxeakezabatu.php?modelo=%s\"><img src=\"img/basura.png\" width=\"20\" /></a></td>
+                      </tr>
+                    " , $row["marca"], $row["modelo"], $row["tipo"],  $row["prezioa"], $row["modelo"]);
+                }
+                  mysqli_free_result($result);
+                  mysqli_close($link);
+              ?>
+            </table>
+        
+            <br><br>
+        <p align="center">------------------------------------------------------------------------------------</p>
+        <br><br>
+
+            <h1 align="center"> Usuarioak </h1>
+            <br><br>
+
+            <?php
+                
                 $link=ConnectDataBase();
               $result=mysqli_query($link,"select * from users");
 
@@ -268,7 +311,7 @@
                   mysqli_close($link);
               ?>
             </table>
-
+<br><br>
 
             </section>
 
