@@ -200,7 +200,7 @@
 			<!-- /MAIN HEADER -->
 		</header>
 		<!-- /HEADER -->
-<div>
+
 		<section class="page-section about-heading">
 
               <form action="Erregistroak/gehitu.php" method="post">
@@ -236,7 +236,7 @@
         <p align="center">------------------------------------------------------------------------------------</p>
         <br><br>
         <h1 align="center"> Usuarioak </h1>
-            <br>
+            <br><br>
 
             <?php
                 include("Login/Konexioa.php");
@@ -244,11 +244,12 @@
               $result=mysqli_query($link,"select * from users");
 
             ?>
-            <table align = "center" class="table table-hover">
-              <tr>
+            <table align = "center" class="table table-hover" id="table">
+              <tr id="menu">
                 <th>Id</th>
                 <th>Email</th>
                 <th>Password</th>
+                <th></th>
               </tr>
 
               <?php
@@ -259,7 +260,7 @@
                         <td>%s</td>
                         <td>%s</td>
                         <td>%s</td>
-                        <td><a href =\"Erregistroak/gehitu_user.php?email=%s\"><img src=\"img/Borrar.png\" width=\"20\" /></a></td>
+                        <td><a href =\"Erregistroak/gehitu_user.php?email=%s\"><img src=\"img/basura.png\" width=\"20\" /></a></td>
                       </tr>
                     " , $row["id"], $row["email"], $row["password"], $row["email"]);
                 }
@@ -270,7 +271,7 @@
 
 
             </section>
-</div>
+
 
 		
 

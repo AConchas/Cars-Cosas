@@ -24,4 +24,21 @@ button {
 
     text-align: center;
   }
+
+  #table{
+
+    background-color: black;
+    color: white;
+    width: 70%;
+    
+  }
+
+  .table-hover th:hover th, .table-hover tr:hover td {
+    background-color: gray;
+}
+
+#menu{
+
+    background-color: black;
+}
   
