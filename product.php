@@ -53,6 +53,7 @@
 						if (37==($_SESSION['user_id'])){
 				   ?>
 					<ul class="header-links pull-right">
+						<li><a href="añadir_registros.php"><i class="fa fa-book"></i></a></li>
 						<li><a href="Login/logout.php"><i class="fa fa-user-o"></i> Log Out</a></li>
 					</ul>
 					<?php
