@@ -204,19 +204,19 @@
 					<div class="col-md-5 col-md-push-2">
 						<div id="product-main-img">
 							<div class="product-preview">
-								<img src="./img/ferrari.jpg" alt="">
+								<img src="./img/shelby.jpg" alt="">
 							</div>
 
 							<div class="product-preview">
-								<img src="./img/ferrari2.jpg" alt="">
+								<img src="./img/shelby2.jpg" alt="">
 							</div>
 
 							<div class="product-preview">
-								<img src="./img/ferrari3.jpg" alt="">
+								<img src="./img/shelby3.jpg" alt="">
 							</div>
 
 							<div class="product-preview">
-								<img src="./img/ferrari4.jpg" alt="">
+								<img src="./img/shelby4.jpg" alt="">
 							</div>
 						</div>
 					</div>
@@ -226,19 +226,19 @@
 					<div class="col-md-2  col-md-pull-5">
 						<div id="product-imgs">
 							<div class="product-preview">
-								<img src="./img/ferrari.jpg" alt="">
+								<img src="./img/shelby.jpg" alt="">
 							</div>
 
 							<div class="product-preview">
-								<img src="./img/ferrari2.jpg" alt="">
+								<img src="./img/shelby2.jpg" alt="">
 							</div>
 
 							<div class="product-preview">
-								<img src="./img/ferrari3.jpg" alt="">
+								<img src="./img/shelby3.jpg" alt="">
 							</div>
 
 							<div class="product-preview">
-								<img src="./img/ferrari4.jpg" alt="">
+								<img src="./img/shelby4.jpg" alt="">
 							</div>
 						</div>
 					</div>
@@ -247,7 +247,7 @@
 					<!-- Product details -->
 					<div class="col-md-5">
 						<div class="product-details">
-							<h2 class="product-name">Ferrari 400 GT</h2>
+							<h2 class="product-name">Ford Mustang Shelby 1967</h2>
 							<div>
 								<div class="product-rating">
 									<i class="fa fa-star"></i>
@@ -259,10 +259,10 @@
 								<a class="review-link" href="#redireccion">Add your review</a>
 							</div>
 							<div>
-								<h3 class="product-price">52.000€ </h3>
+								<h3 class="product-price">200.000€ </h3>
 								<span class="product-available">In Stock</span>
 							</div>
-							<p>El Ferrari 400 y el Ferrari 412 son automóviles deportivos de tipo gran turismo con carrocería coupé 2+2 que fueron producidos por el fabricante italiano Ferrari. Ambos se fabricaron con un sistema de transmisión de 5 velocidades sincronizadas u opcionalmente con una unidad de transmisión automática de 3 velocidades de General Motors.  </p>
+							<p>Para 1967, el G.T. 350 cargó el K-Code de alto rendimiento 289 con un aluminio 'COBRA' hilvanado. El G.T. 500 fue agregado a la alineación, equipado con un motor "Ford Cobra" V8 (Serie FE 428 cu.in.) con dos carburadores de cuatro cañones Holly de 600 CFM sentado sobre una entrada de aluminio de media altura colector.  </p>
 
 							<div class="product-options">
 								<label>
@@ -327,14 +327,14 @@
 								<div id="tab1" class="tab-pane fade in active">
 									<div class="row">
 										<div class="col-md-12">
-											<p>Su diseño deriva del casi idéntico Ferrari 365 GT4 2+2. La producción comenzó en 1976, cuando Ferrari presentó su primer vehículo equipado con una transmisión automática (el 400) en el Salón del Automóvil de París de 1976.<br><br>
+											<p>Los planes documentados para introducir un año de producción media convertible se archivaron debido a problemas de suministro, producción y financieros que sucedieron tan pronto como los primeros autos comenzaron a llegar a las instalaciones de Shelby en Los Ángeles en septiembre. En octubre de 1966, Ford tomó el control de la ingeniería y la compra.<br><br>
 
-                                            Hoy, su línea de diseño elegante y estilizada de Pininfarina y un volumen de producción relativamente reducido puede hacer que se convierta en un clásico futuro. Sin embargo, su reconocimiento no ha sido grande y aparece en la posición número 18 en el libro de la BBC "Crap Cars", situado entre el Daihatsu Applause y el Austin Ambassador. 
+                                            A.O. Smith fue golpeado para reparar el accesorio de fibra de vidrio. y problemas de calidad. Seis meses después, en mayo de 1967, se tomó la decisión de terminar la operación de Shelby, con sede en California. El 18 de agosto de 1967, un pequeño personal, junto con los restantes coches de ingeniería, fue enviado a Ionia.
                                             <br><br>
 
-                                            El 400 automático (o 400A) y el 400 GT fueron las primeras versiones, producidas desde 1976 hasta 1979. El 400 automático utiliza la transmisión automática Turbo-Hydramatic THM400 de General Motors, mientras que la versión 400 GT fue equipada con una transmisión de 5 velocidades sincronizadas. <br><br>
+                                            El pequeño personal de la recién formada Shelby Automotive, Inc. tuvo sustancialmente menos participación después de este tiempo. <br><br>
 
-                                            El motor, basado en el 4.390 cc usado en el Daytona, es un motor V12 de 4.823 cc de 250 kW de potencia. El motor se encuentra ubicado en la zona anterior del vehículo con tracción trasera, el diseño GT tradicional le permitió a Ferrari colocar cuatro asientos en este coupé elegante. </p>
+                                            Para 1968, el nombre Cobra se aplicó a ambos modelos, y ahora se comercializaban como el "Shelby Cobra GT 350" y el "Shelby Cobra GT 500". </p>
 										</div>
 									</div>
 								</div>
@@ -347,10 +347,10 @@
 												<div class="product-rating">
 											<p>Carrocería: Coupé <br>
 												Puertas: 2 <br>
-												Plazas: 5 <br>
-												Maletero: 75 L <br>
-												Potencia: 335 CV <br>
-												Precio: 52.000 € <br>
+												Plazas: 2 <br>
+												Maletero: 200 L <br>
+												Potencia: 360 CV <br>
+												Precio: 200.000 € <br>
 												 
 														Valoracion:
 														<i class="fa fa-star"></i>

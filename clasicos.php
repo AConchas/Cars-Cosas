@@ -431,7 +431,7 @@
 								<div class="product-body">
 									<p class="product-category">Clasicos</p>
 									<h3 class="product-name"><a href="ferrari400.php">Ferrari 400GT</a></h3>
-									<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+									<h4 class="product-price">52.000€ <del class="product-old-price">56.000€</del></h4>
 									<div class="product-rating">
 										<i class="fa fa-star"></i>
 										<i class="fa fa-star"></i>
@@ -462,8 +462,8 @@
 								</div>
 								<div class="product-body">
 									<p class="product-category">Clasicos</p>
-									<h3 class="product-name"><a href="lambo.html">Ford Mustang Shelby 1967</a></h3>
-									<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+									<h3 class="product-name"><a href="Shelby.php">Ford Mustang Shelby 1967</a></h3>
+									<h4 class="product-price">200.000€ <del class="product-old-price">212.000€</del></h4>
 									<div class="product-rating">
 										<i class="fa fa-star"></i>
 										<i class="fa fa-star"></i>
