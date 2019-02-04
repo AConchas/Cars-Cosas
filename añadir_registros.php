@@ -227,8 +227,8 @@
 
 
                 <div class="button" align="center">
-                    <button type="submit">Gehitu</button>
-                    <button type="reset">Reset</button>
+                    <button id="boton" type="submit">Gehitu</button>
+                    <button id="boton" type="reset">Reset</button>
                 </div>
 
         </form>
