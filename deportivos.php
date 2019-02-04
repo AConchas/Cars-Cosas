@@ -282,7 +282,7 @@
 								<img src="./img/gtr1.jpg" alt="">
 							</div>
 							<div class="product-body">
-								<p class="product-category">Category</p>
+								<p class="product-category">Deportivos</p>
 								<h3 class="product-name"><a href="product.php">Nissan GTR</a></h3>
 								<h4 class="product-price">108.050€ </h4>
 							</div>
@@ -293,9 +293,9 @@
 								<img src="./img/r81.jpg" alt="">
 							</div>
 							<div class="product-body">
-								<p class="product-category">Category</p>
+								<p class="product-category">Deportivos</p>
 								<h3 class="product-name"><a href="audir8.php">Audi R8</a></h3>
-								<h4 class="product-price">280.085€ </h4>
+								<h4 class="product-price">260.085€ </h4>
 							</div>
 						</div>
 
@@ -304,9 +304,9 @@
 								<img src="./img/bmw2.jpg" alt="">
 							</div>
 							<div class="product-body">
-								<p class="product-category">Category</p>
+								<p class="product-category">Deportivos</p>
 								<h3 class="product-name"><a href="bmwM8.php">BMW M3</a></h3>
-								<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+								<h4 class="product-price">80.000€</h4>
 							</div>
 						</div>
 					</div>
@@ -341,10 +341,9 @@
 								<div class="product-body">
 
 									<p class="product-category">Deportivos</p>
-									<p class="product-category">Category</p>
 
 									<h3 class="product-name"><a href="product.php">Nissan GTR</a></h3>
-									<h4 class="product-price">$108.050 </h4>
+									<h4 class="product-price">108.050€ </h4>
 									<div class="product-rating">
 										<i class="fa fa-star"></i>
 										<i class="fa fa-star"></i>
@@ -405,7 +404,7 @@
 								<div class="product-body">
 									<p class="product-category">Deportivos</p>
 									<h3 class="product-name"><a href="bmwM8.php">BMW M3</a></h3>
-									<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+									<h4 class="product-price">80.000€</h4>
 									<div class="product-rating">
 										<i class="fa fa-star"></i>
 										<i class="fa fa-star"></i>
@@ -435,7 +434,7 @@
 								<div class="product-body">
 									<p class="product-category">Deportivos</p>
 									<h3 class="product-name"><a href="mustang.php">Ford Mustang 2018</a></h3>
-									<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+									<h4 class="product-price">49.501 €<del class="product-old-price"> 59.877 €</del></h4>
 									<div class="product-rating">
 										<i class="fa fa-star"></i>
 										<i class="fa fa-star"></i>
@@ -467,7 +466,7 @@
 								<div class="product-body">
 									<p class="product-category">Deportivos</p>
 									<h3 class="product-name"><a href="lambo.php">Lamborghini Sesto Elemento</a></h3>
-									<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+									<h4 class="product-price">2.550.000€ <del class="product-old-price">2.650.000€</del></h4>
 									<div class="product-rating">
 										<i class="fa fa-star"></i>
 										<i class="fa fa-star"></i>
