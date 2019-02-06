@@ -275,9 +275,68 @@
             </table>
         
             <br><br>
-        <p align="center">------------------------------------------------------------------------------------</p>
-        <br><br>
+        	<p align="center">------------------------------------------------------------------------------------</p>
+        	<br><br>
 
+
+
+		<center>
+        <form action="añadir_registros.php" method= "post">
+        <table id="izena">
+          <tr>
+            <td><p style="color:#000000";> MODELOA: &nbsp;&nbsp;&nbsp;&nbsp; </p></td>
+            <td> <input type="text" name="Izena"> &nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td><input id="bidali" type="image" src="img/lupa.jpeg" width="50" name="save" value="Aurkitu"></td>
+          </tr>
+		  
+        </table>
+        </form>
+      </center>
+
+	  <br><br>
+<?php
+  error_reporting(E_ALL ^ E_NOTICE);
+
+  $link=ConnectDataBase();
+  $modelo=$_POST["Izena"];
+
+  $result=mysqli_query($link,"SELECT * FROM `coches` where modelo = '$modelo'");
+    ?>
+    <form action="Erregistroak/update.php" method= "post">
+      <table id="table" align="center" class="table table-hover">
+        <tr id="menu">
+          <th>Marca</th>
+          <th>Modeloa</th>
+          <th>Tipo</th>
+          <th>Prezioa</th>
+        <th></th>
+        <th></th>
+      </tr>
+      <?php
+        while($row = mysqli_fetch_array($result))
+        {
+          echo '
+
+              <tr id="table2">
+             <td><input id="input-custom-id" type="text" name="modelo" value="'.$row['modelo'].'"></td>'.
+            '<td><input id="input-custom-mug-nan" type="text" name="marca" value="'.$row['marca'].'"></td>'.
+            '<td><input id="input-custom" type="text" name="tipo" value="'.$row['tipo'].'"></td>'.
+            '<td><input id="input-custom" type="text" name="prezioa" value="'.$row['prezioa'].'"></td>'.
+            '<td><input type="image" src="img/save.png" width="25" name="save"></td>
+            </tr>
+            ';
+        }
+          mysqli_free_result($result);
+      ?>
+      </table>
+    </form>
+
+
+
+
+			<br><br>
+        	<p align="center">------------------------------------------------------------------------------------</p>
+     		<br><br>
             <h1 align="center"> Usuarioak </h1>
             <br><br>
 
