@@ -1,3 +1,8 @@
+/**
+ * Comprueba la marca de los deportivos y enseña solo los seleccionados.
+ * @author Conchaburu
+ * @returns check
+ */
 function checkDeportivos() {
     if (document.getElementById("category-1").checked || document.getElementById("category-2").checked || document.getElementById("category-3").checked || document.getElementById("category-4").checked || document.getElementById("category-5").checked) {
         
@@ -46,7 +51,11 @@ else{
 }
 }
 
-
+/**
+ * Comprueba la marca de los clasicos y enseña solo los seleccionados.
+ * @author Conchaburu
+ * @returns check
+ */
 
 function checkClasicos() {
     if (document.getElementById("category-1").checked || document.getElementById("category-2").checked || document.getElementById("category-3").checked || document.getElementById("category-4").checked || document.getElementById("category-5").checked) {
@@ -96,6 +105,11 @@ else{
 }
 }
 
+/**
+ * Comprueba la marca de los 4x4 y enseña solo los seleccionados.
+ * @author Conchaburu
+ * @returns check
+ */
 
 function checkSUV() {
     if (document.getElementById("category-1").checked || document.getElementById("category-2").checked || document.getElementById("category-3").checked || document.getElementById("category-4").checked) {
@@ -144,7 +158,11 @@ else{
 }
 }
 
-
+/**
+ * Comprueba si es un email o no.
+ * @author Conchaburu
+ * @returns alert
+ */
 function alertEmail() {
         var pass = document.getElementById("email").value;
         var arraydeCadenas = pass.split("@");
@@ -165,7 +183,11 @@ else{
 }
 }
 
-
+/**
+ * Comprueba la eleccion y redirecciona a otra pagina.
+ * @author Conchaburu
+ * @returns redireccionar
+ */
 function Categorias() {
     var categoria = document.getElementById("categorias").value;
     if (categoria != 0) {

@@ -1,4 +1,11 @@
 <?php
+
+/**
+ * Borra coches a la base de datos.
+ * @author Conchaburu
+ * @returns delete
+ */
+
 include("../Login/Konexioa.php");
 $link=ConnectDataBase();
 

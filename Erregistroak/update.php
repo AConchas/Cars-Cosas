@@ -1,4 +1,11 @@
 <?php
+
+/**
+ * Modifica los datos de los coches de la base de datos.
+ * @author Conchaburu
+ * @returns update
+ */
+
 include("../Login/Konexioa.php");
 $link=ConnectDataBase();
 

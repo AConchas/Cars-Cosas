@@ -1,5 +1,9 @@
 <?php
-
+/**
+ * Añade coches a la base de datos.
+ * @author Conchaburu
+ * @returns insert
+ */
 include("../Login/Konexioa.php");
 $link=ConnectDataBase();
 
